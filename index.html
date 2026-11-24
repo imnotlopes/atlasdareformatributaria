@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <!-- COPY V5 HUMANIZADA: title, description e og -->
 <title>Atlas da Reforma do Dentista · Panorâmica</title>
 <meta name="description" content="Uma dúvida por mapa, em três partes: como você está hoje, o que muda com a reforma e o que conferir sozinho, com mapas só da odontologia. Conteúdo educativo.">
@@ -36,7 +36,7 @@
   --sombra:0 1px 2px rgba(11,47,91,.05),0 10px 26px -14px rgba(11,47,91,.28);
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;touch-action:pan-x pan-y}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{margin:0;background:#fff;color:var(--tinta);font:16px/1.55 var(--f);overflow-x:hidden}
 img{max-width:100%;height:auto;display:block}
@@ -57,7 +57,7 @@ a{color:var(--azul)}
 .btn{display:block;width:100%;max-width:460px;margin:0 auto;min-height:60px;padding:18px 20px;border:0;border-radius:3px;background:var(--verde);color:#fff;font:700 1.05rem/1.2 var(--f);text-transform:uppercase;letter-spacing:.03em;text-align:center;text-decoration:none;cursor:pointer;box-shadow:0 4px 0 #1d5e3c;transition:transform .08s}
 .btn:active{transform:translateY(2px);box-shadow:0 2px 0 #1d5e3c}
 .btn.azul{background:var(--azul);box-shadow:0 4px 0 #061a33}
-.btn:focus-visible,.faq-q:focus-visible,.link-discreto:focus-visible,.fechar:focus-visible,.amplia:focus-visible,.lb-x:focus-visible{outline:3px solid var(--h-azul);outline-offset:3px}
+.btn:focus-visible,.faq-q:focus-visible,.link-discreto:focus-visible,.fechar:focus-visible{outline:3px solid var(--h-azul);outline-offset:3px}
 .seguro{display:flex;align-items:center;justify-content:center;gap:6px;font-size:.85rem;color:var(--tinta2);margin-top:10px}
 .seguro svg{width:14px;height:14px}
 
@@ -310,18 +310,8 @@ footer a{color:#fff;display:inline-block;padding:12px 6px;line-height:20px}
 .pino{width:14px;height:14px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#ff8a80,#c8403f);box-shadow:0 3px 4px rgba(0,0,0,.3);z-index:3}
 .balao{width:46px;height:46px;border-radius:50%;background:var(--amarelo);color:#0b2f5b;font:900 1.7rem/46px var(--f);text-align:center;box-shadow:0 0 0 3px #fff,0 8px 16px -6px rgba(11,47,91,.45);z-index:3}
 
-/* Páginas da vitrine: botão de ampliar + marca AMOSTRA em mosaico */
-button.folha{display:block;width:100%;padding:0;border:0;margin:0;cursor:zoom-in;font:inherit;color:inherit;-webkit-appearance:none;appearance:none}
-.vitrine .folha:after,.lb-folha:after{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='170' height='110'%3E%3Ctext x='18' y='68' transform='rotate(-28 85 55)' font-family='Arial,sans-serif' font-weight='700' font-size='24' letter-spacing='3' fill='%230b2f5b' fill-opacity='.2'%3EAMOSTRA%3C/text%3E%3C/svg%3E") 0 0/150px auto repeat;z-index:2;pointer-events:none}
-.lb-folha:after{background-size:190px auto}
-.vitrine .amplia:before{content:"";position:absolute;right:8px;bottom:8px;z-index:3;width:32px;height:32px;border-radius:50%;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230b2f5b' stroke-width='2.4' stroke-linecap='round'%3E%3Ccircle cx='10.5' cy='10.5' r='6.5'/%3E%3Cpath d='M15.5 15.5L21 21M10.5 7.5v6M7.5 10.5h6'/%3E%3C/svg%3E") center/17px no-repeat;box-shadow:0 4px 10px -3px rgba(11,47,91,.45)}
-.lb{position:fixed;top:0;left:0;right:0;bottom:0;z-index:70;background:rgba(12,20,35,.88);display:none;align-items:center;justify-content:center;padding:64px 14px 16px;overflow-y:auto}
-.lb.on{display:flex}
-.lb-caixa{position:relative;margin:auto;max-width:620px}
-.lb-folha{position:relative;background:#fffdf7;border-radius:4px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.45)}
-.lb-folha img{display:block;width:auto;height:auto;max-width:100%;max-height:calc(100vh - 130px)}
-.lb-x{position:absolute;top:-54px;right:0;width:44px;height:44px;border:0;border-radius:50%;background:#fff;color:#0b2f5b;font-size:1.9rem;line-height:1;cursor:pointer}
-.lb-cap{color:#fff;text-align:center;font-weight:600;font-size:.92rem;line-height:1.3;margin:12px 0 0}
+/* Páginas da vitrine: marca AMOSTRA em mosaico (sem ampliar, pedido do usuário 24/11/2026) */
+.vitrine .folha:after{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='170' height='110'%3E%3Ctext x='18' y='68' transform='rotate(-28 85 55)' font-family='Arial,sans-serif' font-weight='700' font-size='24' letter-spacing='3' fill='%230b2f5b' fill-opacity='.2'%3EAMOSTRA%3C/text%3E%3C/svg%3E") 0 0/150px auto repeat;z-index:2;pointer-events:none}
 
 /* Entrada suave ao rolar (só com JS e só para quem não pediu menos movimento) */
 @media (prefers-reduced-motion:no-preference){
@@ -454,25 +444,25 @@ button.folha{display:block;width:100%;padding:0;border:0;margin:0;cursor:zoom-in
 <!-- 2. VEJA COMO FICA · fundo creme #fff7e6: título + linha + as nossas páginas reais (12) num CARROSSEL que desliza sozinho
      (24/11/2026, pedido do usuário; antes era grade 4x3). As cópias do loop são criadas pelo JS, com aria-hidden.
      + uma frase. Páginas do PDF "01 - Atlas da Reforma do Dentista - A4.pdf" em assets/produto/g-*.webp (600 px).
-     Toque para ampliar. Sem o D13 até o selo dele ser corrigido no PDF. -->
+     Sem ampliar (pedido do usuário). Sem o D13 até o selo dele ser corrigido no PDF. -->
 <section class="secao bg-creme" aria-labelledby="t-dentro">
   <div class="wrap">
     <h2 id="t-dentro">Olha como fica o seu caso numa folha</h2>
     <p class="linha-sec">Cada mapa responde uma pergunta e mostra o que já é regra e o que ainda está em discussão.</p>
     <div class="vitrine-caixa">
     <div class="vitrine" role="group" aria-label="Páginas do Atlas">
-      <figure><button type="button" class="folha amplia" data-legenda="A capa do Atlas" aria-label="Ampliar a página: A capa do Atlas"><img src="assets/produto/g-atlas-capa.webp" width="600" height="850" alt="Página do Atlas: A capa do Atlas" decoding="async" loading="lazy"></button><figcaption>A capa do Atlas</figcaption></figure>
-      <figure><button type="button" class="folha amplia" data-legenda="Os 3 selos de certeza" aria-label="Ampliar a página: Os 3 selos de certeza"><img src="assets/produto/g-atlas-como-ler.webp" width="600" height="850" alt="Página do Atlas: Os 3 selos de certeza" decoding="async" loading="lazy"></button><figcaption>Os 3 selos de certeza</figcaption></figure>
-      <figure><button type="button" class="folha amplia" data-legenda="Linha do tempo até 2033" aria-label="Ampliar a página: Linha do tempo até 2033"><img src="assets/produto/g-atlas-n03.webp" width="600" height="850" alt="Página do Atlas: Linha do tempo até 2033" decoding="async" loading="lazy"></button><figcaption>Linha do tempo até 2033</figcaption></figure>
-      <figure><button type="button" class="folha amplia" data-legenda="Os 4 caminhos" aria-label="Ampliar a página: Os 4 caminhos"><img src="assets/produto/g-atlas-n11.webp" width="600" height="850" alt="Página do Atlas: Os 4 caminhos" decoding="async" loading="lazy"></button><figcaption>Os 4 caminhos</figcaption></figure>
-      <figure><button type="button" class="folha amplia" data-legenda="Os 60% da saúde" aria-label="Ampliar a página: Os 60% da saúde"><img src="assets/produto/g-atlas-d02.webp" width="600" height="850" alt="Página do Atlas: Os 60% da saúde" decoding="async" loading="lazy"></button><figcaption>Os 60% da saúde</figcaption></figure>
-      <figure><button type="button" class="folha amplia" data-legenda="Sou contribuinte?" aria-label="Ampliar a página: Sou contribuinte?"><img src="assets/produto/g-atlas-d05.webp" width="600" height="850" alt="Página do Atlas: Sou contribuinte?" decoding="async" loading="lazy"></button><figcaption>Sou contribuinte?</figcaption></figure>
-      <figure><button type="button" class="folha amplia" data-legenda="ISS, carnê-leão e IBS/CBS" aria-label="Ampliar a página: ISS, carnê-leão e IBS/CBS"><img src="assets/produto/g-atlas-d06.webp" width="600" height="850" alt="Página do Atlas: ISS, carnê-leão e IBS/CBS" decoding="async" loading="lazy"></button><figcaption>ISS, carnê-leão e IBS/CBS</figcaption></figure>
-      <figure><button type="button" class="folha amplia" data-legenda="Pessoa física em 2027" aria-label="Ampliar a página: Pessoa física em 2027"><img src="assets/produto/g-atlas-d04.webp" width="600" height="850" alt="Página do Atlas: Pessoa física em 2027" decoding="async" loading="lazy"></button><figcaption>Pessoa física em 2027</figcaption></figure>
-      <figure><button type="button" class="folha amplia" data-legenda="Nota e recibo em 2027" aria-label="Ampliar a página: Nota e recibo em 2027"><img src="assets/produto/g-atlas-d17.webp" width="600" height="850" alt="Página do Atlas: Nota e recibo em 2027" decoding="async" loading="lazy"></button><figcaption>Nota e recibo em 2027</figcaption></figure>
-      <figure><button type="button" class="folha amplia" data-legenda="Os casos do consultório" aria-label="Ampliar a página: Os casos do consultório"><img src="assets/produto/g-atlas-d19.webp" width="600" height="850" alt="Página do Atlas: Os casos do consultório" decoding="async" loading="lazy"></button><figcaption>Os casos do consultório</figcaption></figure>
-      <figure><button type="button" class="folha amplia" data-legenda="Meu cenário, para preencher" aria-label="Ampliar a página: Meu cenário, para preencher"><img src="assets/produto/g-atlas-meu-cenario.webp" width="600" height="850" alt="Página do Atlas: Meu cenário, para preencher" decoding="async" loading="lazy"></button><figcaption>Meu cenário, para preencher</figcaption></figure>
-      <figure><button type="button" class="folha amplia" data-legenda="Perguntas para o contador" aria-label="Ampliar a página: Perguntas para o contador"><img src="assets/produto/g-atlas-perguntas.webp" width="600" height="850" alt="Página do Atlas: Perguntas para o contador" decoding="async" loading="lazy"></button><figcaption>Perguntas para o contador</figcaption></figure>
+      <figure><div class="folha"><img src="assets/produto/g-atlas-capa.webp" width="600" height="850" alt="Página do Atlas: A capa do Atlas" decoding="async" loading="lazy"></div><figcaption>A capa do Atlas</figcaption></figure>
+      <figure><div class="folha"><img src="assets/produto/g-atlas-como-ler.webp" width="600" height="850" alt="Página do Atlas: Os 3 selos de certeza" decoding="async" loading="lazy"></div><figcaption>Os 3 selos de certeza</figcaption></figure>
+      <figure><div class="folha"><img src="assets/produto/g-atlas-n03.webp" width="600" height="850" alt="Página do Atlas: Linha do tempo até 2033" decoding="async" loading="lazy"></div><figcaption>Linha do tempo até 2033</figcaption></figure>
+      <figure><div class="folha"><img src="assets/produto/g-atlas-n11.webp" width="600" height="850" alt="Página do Atlas: Os 4 caminhos" decoding="async" loading="lazy"></div><figcaption>Os 4 caminhos</figcaption></figure>
+      <figure><div class="folha"><img src="assets/produto/g-atlas-d02.webp" width="600" height="850" alt="Página do Atlas: Os 60% da saúde" decoding="async" loading="lazy"></div><figcaption>Os 60% da saúde</figcaption></figure>
+      <figure><div class="folha"><img src="assets/produto/g-atlas-d05.webp" width="600" height="850" alt="Página do Atlas: Sou contribuinte?" decoding="async" loading="lazy"></div><figcaption>Sou contribuinte?</figcaption></figure>
+      <figure><div class="folha"><img src="assets/produto/g-atlas-d06.webp" width="600" height="850" alt="Página do Atlas: ISS, carnê-leão e IBS/CBS" decoding="async" loading="lazy"></div><figcaption>ISS, carnê-leão e IBS/CBS</figcaption></figure>
+      <figure><div class="folha"><img src="assets/produto/g-atlas-d04.webp" width="600" height="850" alt="Página do Atlas: Pessoa física em 2027" decoding="async" loading="lazy"></div><figcaption>Pessoa física em 2027</figcaption></figure>
+      <figure><div class="folha"><img src="assets/produto/g-atlas-d17.webp" width="600" height="850" alt="Página do Atlas: Nota e recibo em 2027" decoding="async" loading="lazy"></div><figcaption>Nota e recibo em 2027</figcaption></figure>
+      <figure><div class="folha"><img src="assets/produto/g-atlas-d19.webp" width="600" height="850" alt="Página do Atlas: Os casos do consultório" decoding="async" loading="lazy"></div><figcaption>Os casos do consultório</figcaption></figure>
+      <figure><div class="folha"><img src="assets/produto/g-atlas-meu-cenario.webp" width="600" height="850" alt="Página do Atlas: Meu cenário, para preencher" decoding="async" loading="lazy"></div><figcaption>Meu cenário, para preencher</figcaption></figure>
+      <figure><div class="folha"><img src="assets/produto/g-atlas-perguntas.webp" width="600" height="850" alt="Página do Atlas: Perguntas para o contador" decoding="async" loading="lazy"></div><figcaption>Perguntas para o contador</figcaption></figure>
     </div>
     <!-- Setas: só aparecem para quem pediu "menos movimento" (aí o carrossel não anda sozinho) -->
     <div class="vit-setas"><button type="button" class="vit-seta" data-dir="-1" aria-label="Páginas anteriores">&larr;</button><button type="button" class="vit-seta" data-dir="1" aria-label="Próximas páginas">&rarr;</button></div>
@@ -847,15 +837,6 @@ button.folha{display:block;width:100%;padding:0;border:0;margin:0;cursor:zoom-in
 <!-- Barra fixa do celular -->
 <div class="fixa" id="fixa"><a href="#oferta" class="btn">Quero o Atlas do Dentista</a></div>
 
-<!-- Ampliação das páginas da vitrine: fecha no X, no fundo e no Esc. Sem biblioteca. -->
-<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Página ampliada" aria-hidden="true">
-  <div class="lb-caixa">
-    <button class="lb-x" type="button" aria-label="Fechar" data-fecha-lb="1">&times;</button>
-    <div class="lb-folha"><img id="lb-img" alt=""></div>
-    <p class="lb-cap" id="lb-cap"></p>
-  </div>
-</div>
-
 <!-- Pop-up de upsell (padrão VESPRO) · COPY V5 HUMANIZADA. Preço do pop-up R$ 23,90 por decisão do usuário (no card o completo é R$ 27,90). -->
 <div class="overlay" id="popup" role="dialog" aria-modal="true" aria-labelledby="pop-t" aria-hidden="true">
   <div class="pop">
@@ -1109,8 +1090,8 @@ safe(function(){
 });
 /* 2. VEJA COMO FICA: carrossel das 12 páginas.
    Desliza sozinho em loop (cópia da lista no fim, com aria-hidden); pausa com o mouse em cima, ao tocar,
-   com o foco do teclado dentro, com a ampliação aberta e fora da tela. Arrasta com o dedo (rolagem nativa)
-   e com o mouse. Um clique sem arrastar abre a ampliação. Com "menos movimento": parado e com setas. */
+   com o foco do teclado dentro e fora da tela. Arrasta com o dedo (rolagem nativa)
+   e com o mouse. As páginas não ampliam. Com "menos movimento": parado e com setas. */
 safe(function(){
   var vit = document.querySelector(".vitrine-caixa .vitrine"); if(!vit){ return; }
   var caixa = vit.parentNode, lb = document.getElementById("lb");
@@ -1189,7 +1170,7 @@ safe(function(){
     vit.className = vit.className.replace(/\s*arrastando/g, "");
     setTimeout(function(){ arr.moveu = false; }, 0);
   });
-  /* se arrastou, o clique que vem junto não abre a ampliação */
+  /* se arrastou, o clique que vem junto é ignorado */
   vit.addEventListener("click", function(e){ if(arr.moveu){ e.preventDefault(); e.stopPropagation(); } }, true);
 
   /* setas (só no modo "menos movimento") */
@@ -1222,45 +1203,9 @@ safe(function(){
   }
   pede(quadro);
 });
-/* Vitrine: tocar numa página amplia (fecha no X, no fundo e no Esc) */
+/* Site sem zoom no celular (pedido do usuário 24/11/2026): o iOS ignora user-scalable=no, então a pinça é barrada aqui; o duplo toque já sai pelo touch-action */
 safe(function(){
-  var lb = document.getElementById("lb"); if(!lb){ return; }
-  var img = document.getElementById("lb-img"), cap = document.getElementById("lb-cap"), x = lb.querySelector(".lb-x"), ultimo = null;
-  function abre(bt){
-    var i = bt.getElementsByTagName("img")[0];
-    img.setAttribute("src", i.getAttribute("src"));
-    img.setAttribute("alt", i.getAttribute("alt"));
-    cap.textContent = bt.getAttribute("data-legenda") || "";
-    ultimo = bt;
-    lb.className = "lb on"; lb.setAttribute("aria-hidden", "false");
-    document.documentElement.style.overflow = "hidden";
-    x.focus();
-    evCl("ampliou_pagina");
-  }
-  function fecha(){
-    lb.className = "lb"; lb.setAttribute("aria-hidden", "true");
-    document.documentElement.style.overflow = "";
-    if(ultimo){ ultimo.focus(); }
-  }
-  /* um clique em qualquer página (inclusive nas cópias do carrossel) abre a ampliação */
-  var vits = document.querySelectorAll(".vitrine"), k;
-  for(k = 0; k < vits.length; k++){
-    vits[k].addEventListener("click", function(e){
-      var t = e.target;
-      while(t && t !== this){
-        if(typeof t.className === "string" && (" " + t.className + " ").indexOf(" amplia ") > -1){ abre(t); return; }
-        t = t.parentNode;
-      }
-    });
-  }
-  lb.addEventListener("click", function(e){
-    var t = e.target;
-    if(t === lb || (t.getAttribute && t.getAttribute("data-fecha-lb"))){ fecha(); }
-  });
-  document.addEventListener("keydown", function(e){
-    if((e.key === "Escape" || e.keyCode === 27) && lb.className.indexOf("on") > -1){ fecha(); }
-    if((e.key === "Tab" || e.keyCode === 9) && lb.className.indexOf("on") > -1){ e.preventDefault(); x.focus(); }
-  });
+  document.addEventListener("gesturestart", function(e){ e.preventDefault(); });
 });
 </script>
 </body>
