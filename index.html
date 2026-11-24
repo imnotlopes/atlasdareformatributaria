@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- COPY V5 HUMANIZADA: title, description e og -->
+<title>Atlas da Reforma do Dentista · Panorâmica</title>
+<meta name="description" content="Uma dúvida por mapa, em três partes: como você está hoje, o que muda com a reforma e o que conferir sozinho, com mapas só da odontologia. Conteúdo educativo.">
+<meta property="og:title" content="Atlas da Reforma do Dentista">
+<meta property="og:description" content="PF ou PJ? Vou pagar duas vezes? Como ficam o Receita Saúde e a nota? A reforma em mapas, com uma parte só da odontologia.">
+<meta property="og:site_name" content="Panorâmica do Dentista">
+<meta property="og:image" content="assets/marca/og-image.jpg"><!-- og-image da Panorâmica (1200x630). URL relativa por enquanto: no deploy vira absoluta (https://dominio/assets/marca/og-image.jpg), senão o WhatsApp e o Facebook não mostram a imagem -->
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="theme-color" content="#0b2f5b">
+<!-- Favicons da marca Panorâmica (marca\logo\logo-uso.md) -->
+<link rel="icon" href="assets/marca/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" href="assets/marca/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/marca/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* =========================================================
+   pagina-v2 · LAYOUT DA REFERÊNCIA (pedido do usuário, 23/11/2026: "praticamente igual ao do Mapa Fácil").
+   Mesma ordem, mesmo tipo de bloco, mesmos fundos por seção e o mesmo ritmo, medidos em
+   referencia\mapa-facil\mapa-secoes.md e nos prints de referencia\mapa-facil\prints\.
+   Nada de texto, nome, logo ou imagem deles: o texto é a copy v5 humanizada e as imagens são as nossas.
+   Contraste AA: botão #2a8656, preço #23855a, texto do laranja #ac5e19.
+   ========================================================= */
+:root{
+  --azul:#0b2f5b; --tinta:#333; --tinta2:#555; --linha:#e2e8f0;
+  --verde:#2a8656; --verde-txt:#23855a; --check:#21a35a; --amarelo:#f1c40f; --vermelho:#e52828; --laranja:#ac5e19;
+  --h-verm:#e24b4a; --h-graf:#2c2c2a; --h-azul:#378add; --h-verde:#3ca778;
+  --f:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  --sombra:0 1px 2px rgba(11,47,91,.05),0 10px 26px -14px rgba(11,47,91,.28);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:#fff;color:var(--tinta);font:16px/1.55 var(--f);overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+h1,h2,h3{font-family:var(--f);color:var(--azul);margin:0 0 .5em;line-height:1.15}
+h2{font-size:1.7rem;font-weight:900;text-transform:uppercase;letter-spacing:-.01em;text-align:center;text-wrap:balance}
+p{margin:0 0 1em}
+a{color:var(--azul)}
+.wrap{max-width:1140px;margin:0 auto;padding:0 18px}
+.centro{text-align:center}
+.secao{padding:48px 0}
+.falta{display:inline-block;background:#fff3c9;border:1px dashed #a8761f;border-radius:6px;padding:0 6px;font-weight:700;color:#6b4c12;font-size:.9em;line-height:1.5;text-transform:none;letter-spacing:0}
+
+/* Fundos por seção, os mesmos da referência */
+.bg-cinza{background:#f8fafc}.bg-creme{background:#fff7e6}.bg-rosado{background:#fdf6f7}.bg-rosa{background:#ffe6e6}
+.bg-azul{background:#eff6ff}.bg-garantia{background:#f8fdff}.bg-branco{background:#fff}
+
+/* Botão verde */
+.btn{display:block;width:100%;max-width:460px;margin:0 auto;min-height:60px;padding:18px 20px;border:0;border-radius:3px;background:var(--verde);color:#fff;font:700 1.05rem/1.2 var(--f);text-transform:uppercase;letter-spacing:.03em;text-align:center;text-decoration:none;cursor:pointer;box-shadow:0 4px 0 #1d5e3c;transition:transform .08s}
+.btn:active{transform:translateY(2px);box-shadow:0 2px 0 #1d5e3c}
+.btn.azul{background:var(--azul);box-shadow:0 4px 0 #061a33}
+.btn:focus-visible,.faq-q:focus-visible,.link-discreto:focus-visible,.fechar:focus-visible,.amplia:focus-visible,.lb-x:focus-visible{outline:3px solid var(--h-azul);outline-offset:3px}
+.seguro{display:flex;align-items:center;justify-content:center;gap:6px;font-size:.85rem;color:var(--tinta2);margin-top:10px}
+.seguro svg{width:14px;height:14px}
+
+/* Lista com check verde simples (como na referência) */
+.checks{list-style:none;padding:0;margin:0}
+.checks li{position:relative;padding-left:26px;margin:0 0 8px;text-align:left}
+.checks li:before{content:"";position:absolute;left:0;top:.28em;width:16px;height:16px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M3 10.5l4.5 4.5L17 5.5' fill='none' stroke='%2321a35a' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat}
+.checks.linhas li{padding:11px 0 11px 26px;margin:0;border-bottom:1px solid #4a4a4a}
+.checks.linhas li:before{top:calc(11px + .28em)}
+.checks.linhas li:last-child{border-bottom:0}
+.nota-60{display:block;font-size:.82em;color:var(--tinta2);font-weight:600}
+
+/* 1. BARRA DO TOPO */
+.barra{position:sticky;top:0;z-index:40;background:var(--azul);color:#fff;text-align:center;font-size:.78rem;font-weight:700;padding:7px 10px;line-height:1.3;letter-spacing:.01em}
+.barra svg{width:12px;height:12px;vertical-align:-1px;margin-right:4px;fill:#f1c40f}
+
+/* 2. HERO */
+.hero{padding:16px 0 40px;text-align:center}
+.pilula-topo{display:inline-block;background:#f6c27a;color:#3a2a10;border:1px solid #b07a2c;border-radius:999px;padding:4px 12px;font-size:.72rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;margin-bottom:10px}
+.hero h1{font-size:1.55rem;font-weight:900;line-height:1.12;letter-spacing:-.01em;max-width:820px;margin:0 auto 12px;text-wrap:balance}
+.h-verm{color:var(--h-verm)}.h-graf{color:var(--h-graf)}.h-azul{color:var(--h-azul)}.h-verde{color:var(--h-verde)}
+.hero .mock{max-width:330px;margin:0 auto 12px;background:#fff;border-radius:18px;padding:8px;box-shadow:var(--sombra)}
+.hero .sub{font-size:.95rem;line-height:1.45;color:var(--tinta);max-width:640px;margin:0 auto 14px}
+.apoio-hero{font-size:.95rem;font-weight:700;color:var(--azul);max-width:600px;margin:22px auto 12px}
+.hero .lista{max-width:560px;margin:0 auto;font-size:.86rem;line-height:1.35}
+.hero .lista li{margin-bottom:6px}
+.entrega{font-size:.86rem;color:var(--tinta);margin:26px auto 0;max-width:520px}
+.entrega svg{width:16px;height:16px;vertical-align:-3px;margin-right:4px;stroke:#c8403f;fill:none;stroke-width:2}
+
+/* 2. VEJA COMO FICA: páginas reais (arrasta no celular, grade no desktop) */
+.linha-sec{color:var(--tinta2);max-width:640px;margin:0 auto;text-align:center}
+/* Carrossel (24/11/2026): uma fileira que desliza sozinha em loop (JS), pausa no mouse/toque/foco e aceita arrastar.
+   Sem JS: fileira com rolagem normal. Com "menos movimento": parada, com setas. */
+.vitrine{display:flex;gap:16px;overflow-x:auto;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;margin:22px -18px 0;padding:8px 18px 14px}
+.vitrine figure{margin:0;flex:0 0 70vw;max-width:280px}
+.vit-js .vitrine{scrollbar-width:none;cursor:grab}
+.vit-js .vitrine::-webkit-scrollbar{display:none}
+.vit-js .vitrine img{-webkit-user-drag:none;-webkit-user-select:none;user-select:none}
+.vitrine.arrastando,.vitrine.arrastando .folha{cursor:grabbing}
+.vit-setas{display:none;justify-content:center;gap:14px;margin:2px 0 8px}
+.vit-manual .vit-setas{display:flex}
+.vit-seta{width:44px;height:44px;border-radius:50%;border:2px solid var(--azul);background:#fff;color:var(--azul);font-size:1.35rem;font-weight:800;line-height:1;cursor:pointer}
+.vitrine figcaption{margin-top:10px;font-size:.84rem;font-weight:700;color:var(--azul);text-align:center;line-height:1.25}
+.vitrine-caixa{background:#fff;border-radius:18px;padding:4px 0 12px;margin:22px auto 0;max-width:1000px;box-shadow:var(--sombra);overflow:hidden}
+.vitrine-caixa .vitrine{margin:0;padding:14px 16px 12px}
+.arraste{text-align:center;font-size:.8rem;font-weight:600;color:var(--tinta2);margin:0}
+.fecho-vit{text-align:center;color:var(--tinta2);font-size:.92rem;max-width:640px;margin:16px auto 0}
+.fecho-vit b{color:var(--azul)}
+
+/* 3. O ATLAS TEM: cards brancos com ícone ilustrado em cima */
+.cards-ico{display:grid;grid-template-columns:1fr;gap:16px;max-width:320px;margin:26px auto 0}
+.card-ico{background:#fff;border:1px solid #d5dbe3;border-radius:16px;padding:24px 20px;text-align:center}
+.card-ico .ilu{display:flex;justify-content:center;align-items:center;height:76px;margin:0 auto 14px}
+.card-ico .ilu svg{width:72px;height:72px}
+.card-ico h3{font-size:1.38rem;font-weight:500;line-height:1.25;margin-bottom:10px}
+.card-ico p{font-size:.92rem;color:var(--tinta2);margin:0;line-height:1.5}
+.selos-pilha{display:flex;flex-direction:column;align-items:center;gap:5px}
+.selo-st{display:inline-block;font:800 .62rem/1 var(--f);letter-spacing:.06em;padding:6px 9px;border-radius:6px;border:2px solid;white-space:nowrap}
+.selo-st.lei{color:#1d6b45;border-color:#3ca778;background:#e9f7ef;transform:rotate(-4deg)}
+.selo-st.prev{color:#1b5f9e;border-color:#378add;background:#eaf3fc;transform:rotate(3deg)}
+.selo-st.disc{color:#7a5300;border-color:#d6a90b;background:#fdf6dc;transform:rotate(-2deg)}
+.linha-pq{text-align:center;font-size:.85rem;color:var(--tinta);margin:12px 0 0}
+
+/* 4. CAIXA AZUL-MARINHO */
+.caixa-escura{background:var(--azul);color:#fff;border-radius:28px;padding:30px 22px 34px;max-width:920px;margin:0 auto}
+.caixa-escura h2{color:#fff;font-size:1.45rem}
+.caixa-escura .checks{max-width:640px;margin:18px auto 26px;font-size:1.08rem;line-height:1.45}
+.caixa-escura .checks li{margin-bottom:10px}
+
+/* 5. FAIXA DE FOTOS (desliza sozinha) */
+.faixa-fotos{padding:14px 0;overflow:hidden}
+.fila-fotos{display:flex;gap:12px;width:max-content;animation:desliza 45s linear infinite}
+.fila-fotos .foto{flex:0 0 150px}
+@keyframes desliza{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.fila-fotos{animation:none}.faixa-fotos{overflow-x:auto}}
+
+/* 6. PERGUNTA DE DOR */
+.dor{padding:34px 0 40px}
+.dor h2{font-size:1.15rem;max-width:860px;margin:0 auto 6px;line-height:1.2}
+.dor .urg{color:var(--laranja);font-size:.86rem;text-align:center;margin:0 0 18px}
+
+/* 7. É PARA O DENTISTA QUE QUER: 6 cards com check */
+.ideal{display:grid;grid-template-columns:1fr;gap:16px;max-width:330px;margin:26px auto 0}
+.card-ideal{background:#fff;border:1px solid #cfd6df;border-radius:16px;padding:22px 18px;text-align:center}
+.card-ideal .ck{width:34px;height:34px;margin:0 auto 12px}
+.card-ideal h3{font-size:1.1rem;font-weight:700;text-transform:uppercase;line-height:1.25;margin-bottom:10px}
+.card-ideal p{font-size:.9rem;color:var(--tinta2);margin:0;line-height:1.5}
+
+/* 8. TUDO O QUE VEM + BÔNUS */
+.recebe-card{position:relative;background:#fdf6e6;border:1.5px solid #8fb3c9;border-radius:18px;padding:30px 20px 18px;max-width:560px;margin:34px auto 0;text-align:center}
+.pilula-verde{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:#8ee08f;color:#0f4d22;border:1px solid #3ca778;border-radius:999px;padding:3px 14px;font-size:.74rem;font-weight:800;letter-spacing:.04em;white-space:nowrap}
+.recebe-card h3{font-size:1.5rem;font-weight:900;text-transform:uppercase;line-height:1.1;margin-bottom:12px}
+.recebe-card .apoio{font-size:.92rem;color:var(--tinta)}
+.recebe-card .mock{background:#fff;border-radius:16px;padding:8px;margin:16px 0 8px;box-shadow:var(--sombra)}
+.recebe-card .checks{margin-top:8px;font-size:.95rem}
+.parte-t{display:block;margin:16px 0 2px;text-align:left;font-size:.74rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--azul)}
+.fecho{font-size:.8rem;color:var(--tinta2);margin:14px 0 0}
+.tem-mais{margin-top:46px;text-align:center}
+.tem-mais .italico{font-size:1.6rem;font-style:italic;font-weight:500;color:var(--azul);line-height:1.25;max-width:640px;margin:14px auto 16px}
+.pilula-verm{display:inline-block;background:var(--vermelho);color:#fff;border-radius:999px;padding:7px 16px;font-size:.84rem;font-weight:700;letter-spacing:.02em}
+.lista-bonus{display:grid;grid-template-columns:1fr;gap:22px;max-width:330px;margin:28px auto 0}
+.bonus{background:#fff;border-radius:16px;overflow:hidden;box-shadow:var(--sombra)}
+.bonus .img .cena{border-radius:0}
+.cena.foto>img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block}
+.bonus .corpo{padding:16px 18px 20px}
+.bonus .tag{display:inline-block;background:var(--amarelo);color:#2c2c2a;border:1px solid #b8920a;border-radius:6px;padding:3px 9px;font-size:.7rem;font-weight:800;letter-spacing:.06em;margin-bottom:8px}
+.bonus h3{font-size:1.35rem;font-weight:700;line-height:1.2;margin-bottom:6px}
+.bonus .desc{font-size:.92rem;color:var(--tinta2);margin-bottom:14px}
+.bonus .checks{font-size:.98rem;margin-bottom:16px}
+.volume{display:block;background:#2d2d2d;color:#fff;border:2px solid #3ca778;border-radius:8px;padding:8px 10px;text-align:center;font-size:.86rem;font-weight:600}
+.volume b{font-weight:800}
+.volume-total{text-align:center;font-weight:700;color:var(--azul);margin:26px auto 0;max-width:640px}
+.volume-total .preco-l{display:block;font-weight:600;color:var(--tinta);margin-top:4px}
+
+/* 9. PLANOS */
+.faixa-urg{display:block;width:max-content;max-width:100%;background:var(--vermelho);color:#fff;text-align:center;font-weight:700;border-radius:999px;padding:7px 16px;margin:0 auto 18px;font-size:.78rem;line-height:1.35}
+.faixa-urg .falta{color:#6b4c12}
+.divisor{width:48px;height:2px;background:var(--azul);margin:4px auto 30px}
+.planos{display:grid;grid-template-columns:1fr;gap:34px;align-items:start;max-width:340px;margin:0 auto}
+.plano{position:relative;background:#fff;border:1.5px solid #b9c3cf;border-radius:14px;padding:26px 18px 22px;text-align:center;box-shadow:var(--sombra)}
+.plano.top{border:2px solid var(--azul)}
+.selo-top{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:#8ee08f;color:#0f4d22;border:1px solid #3ca778;font-size:.76rem;font-weight:800;letter-spacing:.06em;padding:4px 14px;border-radius:999px;white-space:nowrap}
+.plano h3{font-size:1.9rem;font-weight:900;text-transform:uppercase;line-height:1.05;margin-bottom:6px}
+.plano .pra{color:var(--tinta2);font-size:.92rem;margin-bottom:12px}
+.plano .img{margin:0 auto 8px}
+.plano .rotulo{color:var(--tinta2);font-size:.92rem;margin:6px 0 4px}
+.plano .checks{font-size:.95rem;margin-bottom:14px}
+.plano .checks.linhas li{border-bottom-color:#d5dbe3}
+.mini-capa{display:inline-block;vertical-align:middle;width:22px;margin:-4px 8px 0 0}
+.mini-capa .folha{width:22px;border-radius:2px;box-shadow:0 1px 3px rgba(11,47,91,.35)}
+.mini-capa .folha svg{position:absolute;top:0;left:0;width:100%;height:100%}
+.extra b{color:var(--azul)}
+.destaque-bonus{display:block;border:1.5px solid #3ca778;background:#f0fbf3;color:#1d6b45;border-radius:999px;padding:7px 12px;font-size:.88rem;font-weight:700;margin:4px 0 12px}
+.preco{font-size:3.4rem;font-weight:800;line-height:1;color:var(--verde-txt);letter-spacing:-.02em;margin-top:10px}
+.preco small{font-size:1.3rem;font-weight:800}
+.depois{font-size:.88rem;font-weight:600;color:var(--tinta);margin:10px 0 2px}
+.unico{font-size:.85rem;color:var(--tinta2);margin:4px 0 10px}
+.garantia-mini{display:flex;align-items:center;justify-content:center;gap:10px;font-size:.88rem;color:var(--tinta2);margin:4px 0 16px}
+/* Selo de garantia = imagem assets/img/selo-garantia-verde(-300).webp, escolhida pelo usuário em 24/11/2026 */
+.selo-g{flex:0 0 auto;display:block;width:64px;height:64px}
+.reforco{background:#fff;border:1px solid #cfd6df;border-radius:16px;padding:26px 20px;max-width:340px;margin:34px auto 0;text-align:center}
+.reforco .ck{width:36px;height:36px;margin:0 auto 12px}
+.reforco h3{font-size:1.15rem;font-weight:800;text-transform:uppercase;line-height:1.2;color:#1f2a37}
+.reforco p{font-size:.92rem;color:var(--tinta2);margin:0}
+
+/* 10. DEPOIMENTOS (placeholder: só volta com depoimento real e autorizado) */
+.deps{display:grid;grid-template-columns:1fr;gap:16px;max-width:340px;margin:0 auto 26px}
+.dep-ph{border:1.5px dashed #c5d2e3;border-radius:14px;padding:24px 16px;text-align:center;color:#4a5a72;font-weight:600;font-size:.92rem}
+.dep-ph .av{width:64px;height:64px;border-radius:50%;background:#e8edf3;margin:0 auto 12px}
+.dep-ph .tr{height:8px;border-radius:4px;background:#eef2f6;margin:8px auto 0;width:80%}
+.dep-ph .tr+.tr{width:62%}
+.dep-nota{text-align:center;color:#4a5a72;font-weight:700;margin:0 0 18px}
+
+/* 11. GARANTIA */
+.garantia{display:flex;flex-direction:column;align-items:center;gap:22px;max-width:900px;margin:0 auto;text-align:center}
+.selo-g.grande{width:210px;height:210px;filter:drop-shadow(0 14px 16px rgba(11,47,91,.22))}
+.garantia h2{font-size:1.5rem;color:#111}
+.lista-ponto{list-style:none;padding:0;margin:0 0 14px;text-align:left}
+.lista-ponto li{position:relative;padding:10px 0 10px 16px;border-bottom:1px solid #cfd6df}
+.lista-ponto li:before{content:"";position:absolute;left:2px;top:1.05em;width:6px;height:6px;border-radius:50%;background:#111}
+.verde{color:var(--verde-txt);font-weight:700}
+
+/* 12. COMO VOCÊ RECEBE */
+.passos{list-style:none;padding:0;margin:26px auto 0;display:grid;grid-template-columns:1fr;gap:30px;max-width:340px}
+.passo{text-align:center}
+.passo svg{width:84px;height:84px;margin:0 auto 10px;display:block}
+.passo h3{font-size:1.15rem;font-weight:700;color:#111;margin-bottom:4px}
+.passo p{margin:0;color:var(--tinta2);font-size:.95rem}
+
+/* 13. FAQ + fecho */
+.faq{max-width:780px;margin:24px auto 0}
+.faq-item{border-bottom:1px solid #222}
+.faq-q{width:100%;min-height:56px;background:none;border:0;text-align:left;font:400 1rem/1.35 var(--f);color:#111;padding:16px 34px 12px 0;cursor:pointer;position:relative}
+.faq-q:after{content:"+";position:absolute;right:4px;top:50%;transform:translateY(-50%);font-size:1.5rem;color:var(--azul)}
+.faq-q[aria-expanded="true"]{font-weight:700}
+.faq-q[aria-expanded="true"]:after{content:"\2212"}
+.faq-a{padding:0 0 16px;color:var(--tinta2);font-size:.95rem}
+.js .faq-a[hidden]{display:none}
+.fecho-final{max-width:640px;margin:46px auto 0;text-align:center}
+.fecho-final h2{font-size:1.45rem}
+.fecho-final p{color:var(--tinta2)}
+
+/* 14. RODAPÉ PRETO */
+footer{background:#000;color:#e6e6e6;font-size:.8rem;padding:30px 0 100px;text-align:center;line-height:1.5}
+footer p{margin:0 0 10px}
+footer .dir{font-weight:700;color:#fff;font-size:.9rem;margin-bottom:16px}
+footer a{color:#fff;display:inline-block;padding:12px 6px;line-height:20px}
+
+/* Barra fixa do celular */
+.fixa{position:fixed;left:0;right:0;bottom:0;z-index:45;background:rgba(255,255,255,.97);border-top:1px solid var(--linha);padding:10px 14px calc(10px + env(safe-area-inset-bottom));transform:translateY(110%);transition:transform .25s}
+.fixa.on{transform:none}
+.fixa .btn{min-height:50px;padding:13px}
+
+/* Pop-up de upsell: quem rola é o fundo */
+.overlay{position:fixed;inset:0;z-index:60;background:rgba(12,20,35,.72);display:none;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:20px 14px}
+.overlay.on{display:flex}
+.pop{position:relative;background:#fff;border-radius:16px;max-width:440px;width:100%;margin:auto;padding:28px 22px 22px;text-align:center}
+.fechar{position:absolute;top:6px;right:6px;width:44px;height:44px;border:0;background:none;font-size:1.8rem;line-height:1;color:var(--tinta2);cursor:pointer}
+.pop .sobretitulo{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--azul);font-weight:800;margin-bottom:.3em}
+.pop .apoio{color:var(--tinta2)}
+.pop h3{font-size:1.3rem;font-weight:800}
+.c-azul{color:var(--h-azul)}
+.pop .checks{display:inline-block;font-size:.95rem;margin:4px 0 14px}
+.pop .checks li{margin-bottom:6px}
+.caixa-preco{background:#eaf1f8;border-radius:12px;padding:12px;margin-bottom:16px}
+.caixa-preco s{color:var(--tinta2)}
+.caixa-preco b{display:block;font-size:2rem;font-weight:800;color:var(--azul)}
+.link-discreto{display:inline-block;margin-top:14px;padding:10px;color:var(--tinta2);font-size:.9rem;min-height:44px}
+.pop-capas{display:flex;justify-content:center;margin:4px 0 12px}
+.pop-capas .folha{width:40px;margin:0 -2px;transform:rotate(var(--r,0deg));box-shadow:0 1px 1px rgba(11,47,91,.12),0 6px 12px -6px rgba(11,47,91,.45)}
+.pop-capas .folha svg{position:absolute;top:0;left:0;width:100%;height:100%}
+@media (max-height:720px){.pop{padding:22px 18px 16px}.pop h3{font-size:1.15rem}.caixa-preco b{font-size:1.6rem}.pop .checks li{margin-bottom:4px}.pop-capas{margin:0 0 4px}.pop-capas .folha{width:24px}.pop .sobretitulo{margin-bottom:0}}
+
+/* ---------- Mockups (as nossas páginas reais e os desenhos dos bônus #1 a #3) ---------- */
+.cena{position:relative;width:100%;aspect-ratio:4/3}
+.cena.r-1-1{aspect-ratio:1/1}
+.cena-hero{aspect-ratio:330/230}
+.cena .p{position:absolute;transform:rotate(var(--r,0deg))}
+.cena.fundo{border-radius:16px;overflow:hidden}
+.f-azul{background:linear-gradient(160deg,#eaf3fc,#d6e6f6)}
+.f-creme{background:linear-gradient(160deg,#fbf1dc,#f1e0bb)}
+.f-verde{background:linear-gradient(160deg,#eaf7f0,#d2eedd)}
+.f-rosa{background:linear-gradient(160deg,#fdf0ef,#f7dcdb)}
+.f-parede{background:linear-gradient(180deg,#f1f4f8,#e1e8f1)}
+.f-pfpj{background:linear-gradient(105deg,#fdeceb 50%,#e7f1fc 50%)}
+.folha{position:relative;aspect-ratio:210/297;background:#fffdf7;border-radius:3px;overflow:hidden;box-shadow:0 1px 1px rgba(11,47,91,.1),0 12px 24px -8px rgba(11,47,91,.38)}
+.folha>svg{position:absolute;top:0;left:0;width:100%;height:100%;display:block}
+.folha>img,.cel>img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:top}
+.folha.planilha>img{object-position:left top}
+.cel{aspect-ratio:9/18.5;background:#16233b;border-radius:16%/8%;padding:5%;box-shadow:0 2px 0 #0d1626,0 16px 30px -10px rgba(11,47,91,.55);z-index:2}
+.cel>svg{display:block;width:100%;height:100%;border-radius:12%/6%;background:#fff}
+.cel>img{position:static;display:block;border-radius:12%/6%;background:#fff}
+.cel:after{content:"";position:absolute;top:3%;left:40%;width:20%;height:1.8%;border-radius:4px;background:#16233b}
+.caneta{height:auto;z-index:3;filter:drop-shadow(0 4px 4px rgba(11,47,91,.25))}
+.sombra-svg,.recibo>svg{filter:drop-shadow(0 10px 14px rgba(11,47,91,.25))}
+.recibo{z-index:2}.recibo>svg{display:block;width:100%;height:auto}
+.planilha-print{z-index:2}
+.planilha-print>img{display:block;width:100%;height:auto;border-radius:6px;box-shadow:0 1px 1px rgba(11,47,91,.1),0 14px 26px -10px rgba(11,47,91,.4)}
+.ft-tit{font:800 10.5px var(--f);fill:#fff}
+.ft-h{font:800 14px var(--f);fill:#fff}
+.cal-t{font:800 9px var(--f);fill:#fff;letter-spacing:.6px}
+.rc-t{font:800 12px var(--f);fill:#0b2f5b;letter-spacing:1px}
+.rc-v{font:800 10px var(--f);fill:#23855a}
+.selo-39{display:flex;flex-direction:column;align-items:center;justify-content:center;width:74px;height:74px;border-radius:50%;background:var(--amarelo);color:#2c2c2a;font:700 .55rem/1.1 var(--f);text-transform:uppercase;text-align:center;padding:6px;box-shadow:0 0 0 3px #fff,0 8px 18px -6px rgba(11,47,91,.45);z-index:3}
+.selo-39 b{font:900 1.65rem/1 var(--f);color:#0b2f5b}
+.selo-39.pq{width:54px;height:54px;font-size:.48rem;padding:4px}
+.selo-39.pq b{font-size:1.15rem}
+.pino{width:14px;height:14px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#ff8a80,#c8403f);box-shadow:0 3px 4px rgba(0,0,0,.3);z-index:3}
+.balao{width:46px;height:46px;border-radius:50%;background:var(--amarelo);color:#0b2f5b;font:900 1.7rem/46px var(--f);text-align:center;box-shadow:0 0 0 3px #fff,0 8px 16px -6px rgba(11,47,91,.45);z-index:3}
+
+/* Páginas da vitrine: botão de ampliar + marca AMOSTRA em mosaico */
+button.folha{display:block;width:100%;padding:0;border:0;margin:0;cursor:zoom-in;font:inherit;color:inherit;-webkit-appearance:none;appearance:none}
+.vitrine .folha:after,.lb-folha:after{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='170' height='110'%3E%3Ctext x='18' y='68' transform='rotate(-28 85 55)' font-family='Arial,sans-serif' font-weight='700' font-size='24' letter-spacing='3' fill='%230b2f5b' fill-opacity='.2'%3EAMOSTRA%3C/text%3E%3C/svg%3E") 0 0/150px auto repeat;z-index:2;pointer-events:none}
+.lb-folha:after{background-size:190px auto}
+.vitrine .amplia:before{content:"";position:absolute;right:8px;bottom:8px;z-index:3;width:32px;height:32px;border-radius:50%;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230b2f5b' stroke-width='2.4' stroke-linecap='round'%3E%3Ccircle cx='10.5' cy='10.5' r='6.5'/%3E%3Cpath d='M15.5 15.5L21 21M10.5 7.5v6M7.5 10.5h6'/%3E%3C/svg%3E") center/17px no-repeat;box-shadow:0 4px 10px -3px rgba(11,47,91,.45)}
+.lb{position:fixed;top:0;left:0;right:0;bottom:0;z-index:70;background:rgba(12,20,35,.88);display:none;align-items:center;justify-content:center;padding:64px 14px 16px;overflow-y:auto}
+.lb.on{display:flex}
+.lb-caixa{position:relative;margin:auto;max-width:620px}
+.lb-folha{position:relative;background:#fffdf7;border-radius:4px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.45)}
+.lb-folha img{display:block;width:auto;height:auto;max-width:100%;max-height:calc(100vh - 130px)}
+.lb-x{position:absolute;top:-54px;right:0;width:44px;height:44px;border:0;border-radius:50%;background:#fff;color:#0b2f5b;font-size:1.9rem;line-height:1;cursor:pointer}
+.lb-cap{color:#fff;text-align:center;font-weight:600;font-size:.92rem;line-height:1.3;margin:12px 0 0}
+
+/* Entrada suave ao rolar (só com JS e só para quem não pediu menos movimento) */
+@media (prefers-reduced-motion:no-preference){
+  .rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.2,1)}
+  .rv.in{opacity:1;transform:none}
+}
+
+/* ---------- Tablet e desktop: as larguras e grades da referência ---------- */
+@media (min-width:720px){
+  body{font-size:17px}
+  h2{font-size:2.5rem}
+  .secao{padding:70px 0}
+  .barra{font-size:.82rem;padding:9px 10px}
+  .hero{padding:28px 0 56px}
+  .hero h1{font-size:2.6rem}
+  .hero .mock{max-width:420px}
+  .hero .sub{font-size:1.02rem}
+  .vitrine-caixa{max-width:1000px;margin-top:30px;padding:0}
+  .vitrine-caixa .vitrine{padding:26px 28px 16px;gap:24px}
+  .vitrine figure{flex-basis:240px}
+  .arraste{display:none}
+  .cards-ico{grid-template-columns:1fr 1fr;max-width:1000px;gap:18px}
+  .card-ico{display:flex;align-items:center;gap:18px;text-align:left;padding:22px 24px}
+  .card-ico .ilu{flex:0 0 76px;margin:0}
+  .card-ico h3{font-size:1.2rem}
+  .caixa-escura{padding:44px 40px 48px}
+  .caixa-escura h2{font-size:2.5rem}
+  .fila-fotos .foto{flex-basis:210px}
+  .dor h2{font-size:2rem}
+  .dor .urg{font-size:.95rem}
+  .ideal{grid-template-columns:repeat(2,1fr);max-width:1120px;gap:20px}
+  .card-ideal{display:flex;align-items:center;gap:16px;text-align:left;padding:22px 24px}
+  .card-ideal .ck{flex:0 0 30px;margin:0}
+  .recebe-card{padding:34px 34px 22px}
+  .lista-bonus{grid-template-columns:repeat(2,1fr);max-width:760px}
+  .planos{grid-template-columns:1fr 1fr;max-width:920px;gap:22px}
+  .reforco{max-width:440px}
+  .deps{grid-template-columns:repeat(3,1fr);max-width:1000px}
+  .garantia{flex-direction:row;text-align:left;gap:56px}
+  .garantia h2{text-align:left;font-size:2.1rem}
+  .passos{grid-template-columns:repeat(2,1fr);max-width:760px}
+  .fixa{display:none}
+}
+@media (min-width:1000px){
+  h2{font-size:3rem}
+  .hero h1{font-size:2.9rem;max-width:1000px}
+  .hero .mock{max-width:500px}
+  .reforco{display:flex;align-items:center;gap:16px;text-align:left;max-width:560px}
+  .reforco .ck{flex:0 0 36px;margin:0}
+  .ideal{grid-template-columns:repeat(3,1fr)}
+  .lista-bonus{grid-template-columns:repeat(3,1fr);max-width:1120px}
+  .passos{grid-template-columns:repeat(4,1fr);max-width:1140px}
+}
+
+/* Imagens aprovadas (supervisor de imagens, 23/11/2026): ícones em PNG transparente sobre fundo branco e fotos de uso */
+.card-ico .ilu img{width:76px;height:76px}
+.passo img{width:88px;height:88px;margin:0 auto 10px;display:block}
+.card-ideal .ck.ilu-ideal{width:60px;height:60px;margin:0 auto 10px}
+.card-ideal .ck.ilu-ideal img{width:60px;height:60px}
+.foto-real{background:#eef2f6}
+.cena-hero.foto-real{background:#fff}
+.foto-real>img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center}
+@media (min-width:720px){.card-ideal .ck.ilu-ideal{flex:0 0 60px;margin:0}}
+
+/* Marca Panorâmica (23/11/2026): só o logo; layout, cores e textos ficam iguais.
+   Respiro em volta = altura do "P" (logo-uso.md). Mínimo do logo horizontal: 120 px. */
+.logo-topo{display:block;width:128px;height:auto;margin:0 auto 12px}
+.logo-rodape{display:block;width:160px;height:auto;margin:0 auto 18px}
+@media (min-width:720px){.logo-topo{width:150px;margin-bottom:14px}}
+</style>
+</head>
+<body>
+<!-- Desenhos reaproveitados pelos mockups (folhas, tela do celular, caneta, mês do calendário) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="m-col" viewBox="0 0 210 297"><rect width="210" height="297" fill="#fffdf7"/><rect width="210" height="46" style="fill:var(--c1,#0b2f5b)"/><rect x="14" y="58" width="86" height="30" rx="7" fill="#e24b4a"/><rect x="110" y="58" width="86" height="30" rx="7" fill="#378add"/><path d="M105 96v140" stroke="#d5dce5" stroke-width="1.5" stroke-dasharray="4 4"/><circle cx="22" cy="107" r="4.5" fill="#fdeaea" stroke="#e24b4a" stroke-width="1.4"/><rect x="32" y="103" width="64" height="3.6" rx="1.8" fill="#9aa9bd"/><rect x="32" y="111" width="48" height="3" rx="1.5" fill="#d5dce5"/><circle cx="118" cy="107" r="4.5" fill="#e5f1fc" stroke="#378add" stroke-width="1.4"/><rect x="128" y="103" width="64" height="3.6" rx="1.8" fill="#9aa9bd"/><rect x="128" y="111" width="48" height="3" rx="1.5" fill="#d5dce5"/><circle cx="22" cy="135" r="4.5" fill="#fdeaea" stroke="#e24b4a" stroke-width="1.4"/><rect x="32" y="131" width="56" height="3.6" rx="1.8" fill="#9aa9bd"/><rect x="32" y="139" width="38" height="3" rx="1.5" fill="#d5dce5"/><circle cx="118" cy="135" r="4.5" fill="#e5f1fc" stroke="#378add" stroke-width="1.4"/><rect x="128" y="131" width="56" height="3.6" rx="1.8" fill="#9aa9bd"/><rect x="128" y="139" width="38" height="3" rx="1.5" fill="#d5dce5"/><circle cx="22" cy="163" r="4.5" fill="#fdeaea" stroke="#e24b4a" stroke-width="1.4"/><rect x="32" y="159" width="48" height="3.6" rx="1.8" fill="#9aa9bd"/><rect x="32" y="167" width="48" height="3" rx="1.5" fill="#d5dce5"/><circle cx="118" cy="163" r="4.5" fill="#e5f1fc" stroke="#378add" stroke-width="1.4"/><rect x="128" y="159" width="48" height="3.6" rx="1.8" fill="#9aa9bd"/><rect x="128" y="167" width="48" height="3" rx="1.5" fill="#d5dce5"/><circle cx="22" cy="191" r="4.5" fill="#fdeaea" stroke="#e24b4a" stroke-width="1.4"/><rect x="32" y="187" width="64" height="3.6" rx="1.8" fill="#9aa9bd"/><rect x="32" y="195" width="38" height="3" rx="1.5" fill="#d5dce5"/><circle cx="118" cy="191" r="4.5" fill="#e5f1fc" stroke="#378add" stroke-width="1.4"/><rect x="128" y="187" width="64" height="3.6" rx="1.8" fill="#9aa9bd"/><rect x="128" y="195" width="38" height="3" rx="1.5" fill="#d5dce5"/><circle cx="22" cy="219" r="4.5" fill="#fdeaea" stroke="#e24b4a" stroke-width="1.4"/><rect x="32" y="215" width="56" height="3.6" rx="1.8" fill="#9aa9bd"/><rect x="32" y="223" width="48" height="3" rx="1.5" fill="#d5dce5"/><circle cx="118" cy="219" r="4.5" fill="#e5f1fc" stroke="#378add" stroke-width="1.4"/><rect x="128" y="215" width="56" height="3.6" rx="1.8" fill="#9aa9bd"/><rect x="128" y="223" width="48" height="3" rx="1.5" fill="#d5dce5"/><rect x="14" y="242" width="182" height="16" rx="5" fill="#fdf5d6" stroke="#d6a90b" stroke-width="1.2"/><rect x="22" y="248.5" width="120" height="3.5" rx="1.7" fill="#b58c07"/><rect x="14" y="268" width="182" height="1.2" fill="#dfe5ee"/><rect x="14" y="276" width="96" height="3.5" rx="1.7" fill="#c3ccd8"/><rect x="14" y="284" width="64" height="3.5" rx="1.7" fill="#d5dce5"/><circle cx="184" cy="280" r="9" fill="none" stroke="#3ca778" stroke-width="1.6"/><path d="M179.5 280l3 3 6-6" fill="none" stroke="#3ca778" stroke-width="1.8" stroke-linecap="round"/></symbol><symbol id="m-linha" viewBox="0 0 210 297"><rect width="210" height="297" fill="#fffdf7"/><rect width="210" height="46" style="fill:var(--c1,#0b2f5b)"/><path d="M36 64v190" stroke="#cfd8e3" stroke-width="2.5"/><rect x="24" y="85" width="176" height="24" rx="6" fill="#fdeaea"/><circle cx="36" cy="72" r="7" fill="#e24b4a" stroke="#fff" stroke-width="2"/><text x="50" y="75.5" font-family="Inter,Arial,sans-serif" font-weight="700" font-size="10" fill="#0b2f5b">2026</text><rect x="86" y="67" width="110" height="4" rx="2" fill="#9aa9bd"/><rect x="86" y="74" width="80" height="3" rx="1.5" fill="#d5dce5"/><circle cx="36" cy="97" r="7" fill="#378add" stroke="#fff" stroke-width="2"/><text x="50" y="100.5" font-family="Inter,Arial,sans-serif" font-weight="700" font-size="10" fill="#0b2f5b">2027</text><rect x="86" y="92" width="86" height="4" rx="2" fill="#9aa9bd"/><rect x="86" y="99" width="56" height="3" rx="1.5" fill="#d5dce5"/><circle cx="36" cy="122" r="7" fill="#3ca778" stroke="#fff" stroke-width="2"/><text x="50" y="125.5" font-family="Inter,Arial,sans-serif" font-weight="700" font-size="10" fill="#0b2f5b">2028</text><rect x="86" y="117" width="122" height="4" rx="2" fill="#9aa9bd"/><rect x="86" y="124" width="92" height="3" rx="1.5" fill="#d5dce5"/><circle cx="36" cy="147" r="7" fill="#d6a90b" stroke="#fff" stroke-width="2"/><text x="50" y="150.5" font-family="Inter,Arial,sans-serif" font-weight="700" font-size="10" fill="#0b2f5b">2029</text><rect x="86" y="142" width="78" height="4" rx="2" fill="#9aa9bd"/><rect x="86" y="149" width="48" height="3" rx="1.5" fill="#d5dce5"/><circle cx="36" cy="172" r="7" fill="#e24b4a" stroke="#fff" stroke-width="2"/><text x="50" y="175.5" font-family="Inter,Arial,sans-serif" font-weight="700" font-size="10" fill="#0b2f5b">2030</text><rect x="86" y="167" width="100" height="4" rx="2" fill="#9aa9bd"/><rect x="86" y="174" width="70" height="3" rx="1.5" fill="#d5dce5"/><circle cx="36" cy="197" r="7" fill="#378add" stroke="#fff" stroke-width="2"/><text x="50" y="200.5" font-family="Inter,Arial,sans-serif" font-weight="700" font-size="10" fill="#0b2f5b">2031</text><rect x="86" y="192" width="114" height="4" rx="2" fill="#9aa9bd"/><rect x="86" y="199" width="84" height="3" rx="1.5" fill="#d5dce5"/><circle cx="36" cy="222" r="7" fill="#3ca778" stroke="#fff" stroke-width="2"/><text x="50" y="225.5" font-family="Inter,Arial,sans-serif" font-weight="700" font-size="10" fill="#0b2f5b">2032</text><rect x="86" y="217" width="82" height="4" rx="2" fill="#9aa9bd"/><rect x="86" y="224" width="52" height="3" rx="1.5" fill="#d5dce5"/><circle cx="36" cy="247" r="7" fill="#d6a90b" stroke="#fff" stroke-width="2"/><text x="50" y="250.5" font-family="Inter,Arial,sans-serif" font-weight="700" font-size="10" fill="#0b2f5b">2033</text><rect x="86" y="242" width="94" height="4" rx="2" fill="#9aa9bd"/><rect x="86" y="249" width="64" height="3" rx="1.5" fill="#d5dce5"/><rect x="14" y="268" width="182" height="1.2" fill="#dfe5ee"/><rect x="14" y="276" width="96" height="3.5" rx="1.7" fill="#c3ccd8"/><rect x="14" y="284" width="64" height="3.5" rx="1.7" fill="#d5dce5"/><circle cx="184" cy="280" r="9" fill="none" stroke="#3ca778" stroke-width="1.6"/><path d="M179.5 280l3 3 6-6" fill="none" stroke="#3ca778" stroke-width="1.8" stroke-linecap="round"/></symbol><symbol id="m-lista" viewBox="0 0 210 297"><rect width="210" height="297" fill="#fffdf7"/><rect width="210" height="46" style="fill:var(--c1,#0b2f5b)"/><rect x="16" y="62" width="15" height="15" rx="3" fill="#fff" stroke="#0b2f5b" stroke-width="1.5"/><path d="M19.5 69.5l3.5 3.5 7-8" fill="none" stroke="#3ca778" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><rect x="40" y="64" width="150" height="4.5" rx="2.2" fill="#9aa9bd"/><rect x="40" y="72" width="100" height="3" rx="1.5" fill="#d5dce5"/><rect x="16" y="89" width="15" height="15" rx="3" fill="#fff" stroke="#0b2f5b" stroke-width="1.5"/><path d="M19.5 96.5l3.5 3.5 7-8" fill="none" stroke="#3ca778" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><rect x="40" y="91" width="128" height="4.5" rx="2.2" fill="#9aa9bd"/><rect x="40" y="99" width="78" height="3" rx="1.5" fill="#d5dce5"/><rect x="16" y="116" width="15" height="15" rx="3" fill="#fff" stroke="#0b2f5b" stroke-width="1.5"/><rect x="40" y="118" width="140" height="4.5" rx="2.2" fill="#9aa9bd"/><rect x="40" y="126" width="90" height="3" rx="1.5" fill="#d5dce5"/><rect x="16" y="143" width="15" height="15" rx="3" fill="#fff" stroke="#0b2f5b" stroke-width="1.5"/><path d="M19.5 150.5l3.5 3.5 7-8" fill="none" stroke="#3ca778" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><rect x="40" y="145" width="116" height="4.5" rx="2.2" fill="#9aa9bd"/><rect x="40" y="153" width="66" height="3" rx="1.5" fill="#d5dce5"/><rect x="16" y="170" width="15" height="15" rx="3" fill="#fff" stroke="#0b2f5b" stroke-width="1.5"/><path d="M19.5 177.5l3.5 3.5 7-8" fill="none" stroke="#3ca778" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><rect x="40" y="172" width="146" height="4.5" rx="2.2" fill="#9aa9bd"/><rect x="40" y="180" width="96" height="3" rx="1.5" fill="#d5dce5"/><rect x="16" y="197" width="15" height="15" rx="3" fill="#fff" stroke="#0b2f5b" stroke-width="1.5"/><rect x="40" y="199" width="122" height="4.5" rx="2.2" fill="#9aa9bd"/><rect x="40" y="207" width="72" height="3" rx="1.5" fill="#d5dce5"/><rect x="16" y="224" width="15" height="15" rx="3" fill="#fff" stroke="#0b2f5b" stroke-width="1.5"/><rect x="40" y="226" width="134" height="4.5" rx="2.2" fill="#9aa9bd"/><rect x="40" y="234" width="84" height="3" rx="1.5" fill="#d5dce5"/><rect x="14" y="246" width="182" height="16" rx="5" fill="#e5f1fc" stroke="#378add" stroke-width="1.2"/><rect x="22" y="252.5" width="110" height="3.5" rx="1.7" fill="#378add"/><rect x="14" y="268" width="182" height="1.2" fill="#dfe5ee"/><rect x="14" y="276" width="96" height="3.5" rx="1.7" fill="#c3ccd8"/><rect x="14" y="284" width="64" height="3.5" rx="1.7" fill="#d5dce5"/><circle cx="184" cy="280" r="9" fill="none" stroke="#3ca778" stroke-width="1.6"/><path d="M179.5 280l3 3 6-6" fill="none" stroke="#3ca778" stroke-width="1.8" stroke-linecap="round"/></symbol><symbol id="caneta" viewBox="0 0 200 24"><rect x="20" y="5" width="150" height="14" rx="7" fill="#0b2f5b"/><rect x="40" y="3" width="70" height="4" rx="2" fill="#c9d3df"/><rect x="150" y="5" width="22" height="14" fill="#c9d3df"/><path d="M172 5l24 7-24 7z" fill="#e8d9b5"/><path d="M190 10.3l6 1.7-6 1.7z" fill="#2c2c2a"/></symbol><symbol id="mes" viewBox="0 0 50 37"><rect width="50" height="37" rx="4" fill="#f6f8fb"/><rect x="4" y="4" width="18" height="3.5" rx="1.7" fill="#0b2f5b"/><rect x="3.6" y="12.6" width="2.8" height="2.8" rx=".6" fill="#c3ccd8"/><rect x="10.0" y="12.6" width="2.8" height="2.8" rx=".6" fill="#c3ccd8"/><rect x="16.4" y="12.6" width="2.8" height="2.8" rx=".6" fill="#c3ccd8"/><rect x="22.8" y="12.6" width="2.8" height="2.8" rx=".6" fill="#c3ccd8"/><rect x="29.2" y="12.6" width="2.8" height="2.8" rx=".6" fill="#c3ccd8"/><rect x="35.6" y="12.6" width="2.8" height="2.8" rx=".6" fill="#c3ccd8"/><rect x="42.0" y="12.6" width="2.8" height="2.8" rx=".6" fill="#c3ccd8"/><rect x="3.6" y="20.1" width="2.8" height="2.8" rx=".6" fill="#c3ccd8"/><rect x="10.0" y="20.1" width="2.8" height="2.8" rx=".6" fill="#c3ccd8"/><rect x="16.4" y="20.1" width="2.8" height="2.8" rx=".6" fill="#c3ccd8"/><rect x="22.8" y="20.1" width="2.8" height="2.8" rx=".6" fill="#c3ccd8"/><rect x="29.2" y="20.1" width="2.8" height="2.8" rx=".6" fill="#c3ccd8"/><rect x="35.6" y="20.1" width="2.8" height="2.8" rx=".6" fill="#c3ccd8"/><rect x="42.0" y="20.1" width="2.8" height="2.8" rx=".6" fill="#c3ccd8"/><rect x="3.6" y="27.6" width="2.8" height="2.8" rx=".6" fill="#c3ccd8"/><rect x="10.0" y="27.6" width="2.8" height="2.8" rx=".6" fill="#c3ccd8"/><rect x="16.4" y="27.6" width="2.8" height="2.8" rx=".6" fill="#c3ccd8"/><rect x="22.8" y="27.6" width="2.8" height="2.8" rx=".6" fill="#c3ccd8"/><rect x="29.2" y="27.6" width="2.8" height="2.8" rx=".6" fill="#c3ccd8"/><rect x="35.6" y="27.6" width="2.8" height="2.8" rx=".6" fill="#c3ccd8"/><rect x="42.0" y="27.6" width="2.8" height="2.8" rx=".6" fill="#c3ccd8"/></symbol></svg>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1811554953382717&ev=PageView&noscript=1"></noscript>
+
+<!-- =====================================================================
+  LAYOUT = o da página de referência (Mapa Fácil), seção por seção, na mesma ordem (pedido do usuário, 23/11/2026).
+  TEXTO = copy\humanizado-v5\pagina-v5-humanizada.md. IMAGENS = as nossas (páginas reais do PDF, desenhos dos bônus #1 a #3).
+  Headline provisória: o usuário vai escolher uma nova.
+  Itens marcados "EM PRODUÇÃO" ainda não existem no produto ([[A PRODUZIR]] na copy): a página NÃO pode ser publicada com eles visíveis.
+
+  Referência -> nossa página
+  0 barra · 1 hero · 2 "veja como fica" (as nossas páginas reais) · 3 "o material possui" (as 3 partes + selo)
+  · 4 caixa azul-marinho (ganhos) · 5 faixa de fotos · 6 pergunta de dor · 7 "ideal para você" (6 cards)
+  · 8 "tudo o que você vai receber" + bônus · 9 planos + reforço · 10 depoimentos (placeholder)
+  · 11 garantia · 12 como recebe · 13 FAQ + CTA final · 14 rodapé
+===================================================================== -->
+
+<!-- 0. BARRA DO TOPO · fina, azul-marinho. Data fixa escrita à mão, sem cronômetro.
+     Só no último dia: "Último dia do preço de lançamento: [[DATA FIM DA OFERTA]]".
+     Depois da data: o preço sobe para [[PREÇO DEPOIS DO LANÇAMENTO]] e não volta, e a barra troca por "1º/01/2027: começam o CNPJ e a nota da pessoa física contribuinte". -->
+<div class="barra"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg>Preço de lançamento até <span class="falta">[[DATA FIM DA OFERTA]]</span></div>
+
+<!-- 1. HERO · fundo cinza #f8fafc: pílula + headline em 4 cores + mockup em caixa branca + subtítulo + botão + linha de apoio + 10 checks + como recebe -->
+<header class="hero bg-cinza">
+  <div class="wrap">
+    <!-- MARCA PANORÂMICA: logo horizontal, 128 px no celular e 150 px no desktop (mínimo 120 px). Área de proteção = altura do "P" (~12 px) -->
+    <img class="logo-topo" src="assets/marca/logo-horizontal.svg" width="726" height="166" alt="Panorâmica do Dentista" decoding="async">
+    <span class="pilula-topo">Atlas da Reforma do Dentista</span>
+    <!-- HEADLINE PROVISÓRIA: o usuário vai escolher uma nova. 4 cores por trecho: vermelho, grafite, azul, verde -->
+    <h1><span class="h-verm">PF ou PJ?</span> <span class="h-graf">Vou pagar duas vezes?</span> <span class="h-azul">Como ficam o Receita&nbsp;Saúde</span> <span class="h-verde">e&nbsp;a&nbsp;nota?</span></h1>
+    <div class="mock">
+      <div class="cena cena-hero foto-real"><!-- IMG-HERO (800x558, quadro 330/230): capa e folhas reais do Atlas + celular com a versão de tela. Rodada 2, aprovada em 23/11/2026. Para trocar, substitua hero-mockup.webp e hero-mockup-400.webp --><img src="assets/img/hero-mockup.webp" srcset="assets/img/hero-mockup-400.webp 400w, assets/img/hero-mockup.webp 800w" sizes="(min-width:1024px) 484px, (min-width:720px) 404px, 314px" width="800" height="558" alt="A capa do Atlas, páginas dos mapas em leque e o celular com a versão de tela" fetchpriority="high" decoding="async"></div>
+    </div>
+    <!-- EM PRODUÇÃO: as "três partes" dependem da Parte 1 e do checklist "Estou em dia?" (contrato v3) [[A PRODUZIR]] -->
+    <p class="sub">Uma dúvida por mapa, em três partes: <b>como você está hoje</b>, <b>o que muda com a reforma</b> e <b>o que conferir sozinho</b>, com o sinal de quando vale procurar um contador. Uma parte dos mapas é só da odontologia.</p>
+    <a href="#oferta" class="btn" id="cta-hero">Quero o Atlas do Dentista</a>
+    <div class="seguro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Compra segura · Pagamento único</div>
+    <p class="apoio-hero">Você já cuida dos pacientes, do consultório e das contas. Aqui, cada dúvida de imposto tem a folha dela.</p>
+    <ul class="checks lista">
+      <li>Preciso de contador? Quando vale procurar um<!-- EM PRODUÇÃO: checklist "Estou em dia?" [[A PRODUZIR]] --></li>
+      <li>O que pagar, o que emitir e quando<!-- EM PRODUÇÃO: "As obrigações do dentista" [[A PRODUZIR]] --></li>
+      <li>PF ou PJ: o que pesa em cada lado<!-- EM PRODUÇÃO: "PF ou PJ: o que pesar antes de decidir", se o N11 não mostrar o que pesa em cada lado [[A PRODUZIR]] --></li>
+      <li>Carnê-leão e IBS/CBS são coisas diferentes</li>
+      <li>Para que servem o Receita Saúde e a nota</li>
+      <li>O que muda em 2027 para quem atende no CPF</li>
+      <li>Clínica de colega: o que já tem regra</li>
+      <li>Os 60% da saúde na alíquota do IBS e da CBS <span class="nota-60">No Simples, a conta é outra.</span></li>
+      <li>Recibos e o que entra no livro-caixa<!-- EM PRODUÇÃO: "Dentista pessoa física hoje: carnê-leão, livro-caixa e imposto de renda" [[A PRODUZIR]] --></li>
+      <li>Perguntas prontas, se um dia procurar um contador</li>
+    </ul>
+    <p class="entrega"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>Você recebe o acesso <span class="falta">[[no e-mail / área de membros / WhatsApp]]</span> logo depois do pagamento.</p>
+  </div>
+</header>
+
+<!-- 2. VEJA COMO FICA · fundo creme #fff7e6: título + linha + as nossas páginas reais (12) num CARROSSEL que desliza sozinho
+     (24/11/2026, pedido do usuário; antes era grade 4x3). As cópias do loop são criadas pelo JS, com aria-hidden.
+     + uma frase. Páginas do PDF "01 - Atlas da Reforma do Dentista - A4.pdf" em assets/produto/g-*.webp (600 px).
+     Toque para ampliar. Sem o D13 até o selo dele ser corrigido no PDF. -->
+<section class="secao bg-creme" aria-labelledby="t-dentro">
+  <div class="wrap">
+    <h2 id="t-dentro">Olha como fica o seu caso numa folha</h2>
+    <p class="linha-sec">Cada mapa responde uma pergunta e mostra o que já é regra e o que ainda está em discussão.</p>
+    <div class="vitrine-caixa">
+    <div class="vitrine" role="group" aria-label="Páginas do Atlas">
+      <figure><button type="button" class="folha amplia" data-legenda="A capa do Atlas" aria-label="Ampliar a página: A capa do Atlas"><img src="assets/produto/g-atlas-capa.webp" width="600" height="850" alt="Página do Atlas: A capa do Atlas" decoding="async" loading="lazy"></button><figcaption>A capa do Atlas</figcaption></figure>
+      <figure><button type="button" class="folha amplia" data-legenda="Os 3 selos de certeza" aria-label="Ampliar a página: Os 3 selos de certeza"><img src="assets/produto/g-atlas-como-ler.webp" width="600" height="850" alt="Página do Atlas: Os 3 selos de certeza" decoding="async" loading="lazy"></button><figcaption>Os 3 selos de certeza</figcaption></figure>
+      <figure><button type="button" class="folha amplia" data-legenda="Linha do tempo até 2033" aria-label="Ampliar a página: Linha do tempo até 2033"><img src="assets/produto/g-atlas-n03.webp" width="600" height="850" alt="Página do Atlas: Linha do tempo até 2033" decoding="async" loading="lazy"></button><figcaption>Linha do tempo até 2033</figcaption></figure>
+      <figure><button type="button" class="folha amplia" data-legenda="Os 4 caminhos" aria-label="Ampliar a página: Os 4 caminhos"><img src="assets/produto/g-atlas-n11.webp" width="600" height="850" alt="Página do Atlas: Os 4 caminhos" decoding="async" loading="lazy"></button><figcaption>Os 4 caminhos</figcaption></figure>
+      <figure><button type="button" class="folha amplia" data-legenda="Os 60% da saúde" aria-label="Ampliar a página: Os 60% da saúde"><img src="assets/produto/g-atlas-d02.webp" width="600" height="850" alt="Página do Atlas: Os 60% da saúde" decoding="async" loading="lazy"></button><figcaption>Os 60% da saúde</figcaption></figure>
+      <figure><button type="button" class="folha amplia" data-legenda="Sou contribuinte?" aria-label="Ampliar a página: Sou contribuinte?"><img src="assets/produto/g-atlas-d05.webp" width="600" height="850" alt="Página do Atlas: Sou contribuinte?" decoding="async" loading="lazy"></button><figcaption>Sou contribuinte?</figcaption></figure>
+      <figure><button type="button" class="folha amplia" data-legenda="ISS, carnê-leão e IBS/CBS" aria-label="Ampliar a página: ISS, carnê-leão e IBS/CBS"><img src="assets/produto/g-atlas-d06.webp" width="600" height="850" alt="Página do Atlas: ISS, carnê-leão e IBS/CBS" decoding="async" loading="lazy"></button><figcaption>ISS, carnê-leão e IBS/CBS</figcaption></figure>
+      <figure><button type="button" class="folha amplia" data-legenda="Pessoa física em 2027" aria-label="Ampliar a página: Pessoa física em 2027"><img src="assets/produto/g-atlas-d04.webp" width="600" height="850" alt="Página do Atlas: Pessoa física em 2027" decoding="async" loading="lazy"></button><figcaption>Pessoa física em 2027</figcaption></figure>
+      <figure><button type="button" class="folha amplia" data-legenda="Nota e recibo em 2027" aria-label="Ampliar a página: Nota e recibo em 2027"><img src="assets/produto/g-atlas-d17.webp" width="600" height="850" alt="Página do Atlas: Nota e recibo em 2027" decoding="async" loading="lazy"></button><figcaption>Nota e recibo em 2027</figcaption></figure>
+      <figure><button type="button" class="folha amplia" data-legenda="Os casos do consultório" aria-label="Ampliar a página: Os casos do consultório"><img src="assets/produto/g-atlas-d19.webp" width="600" height="850" alt="Página do Atlas: Os casos do consultório" decoding="async" loading="lazy"></button><figcaption>Os casos do consultório</figcaption></figure>
+      <figure><button type="button" class="folha amplia" data-legenda="Meu cenário, para preencher" aria-label="Ampliar a página: Meu cenário, para preencher"><img src="assets/produto/g-atlas-meu-cenario.webp" width="600" height="850" alt="Página do Atlas: Meu cenário, para preencher" decoding="async" loading="lazy"></button><figcaption>Meu cenário, para preencher</figcaption></figure>
+      <figure><button type="button" class="folha amplia" data-legenda="Perguntas para o contador" aria-label="Ampliar a página: Perguntas para o contador"><img src="assets/produto/g-atlas-perguntas.webp" width="600" height="850" alt="Página do Atlas: Perguntas para o contador" decoding="async" loading="lazy"></button><figcaption>Perguntas para o contador</figcaption></figure>
+    </div>
+    <!-- Setas: só aparecem para quem pediu "menos movimento" (aí o carrossel não anda sozinho) -->
+    <div class="vit-setas"><button type="button" class="vit-seta" data-dir="-1" aria-label="Páginas anteriores">&larr;</button><button type="button" class="vit-seta" data-dir="1" aria-label="Próximas páginas">&rarr;</button></div>
+    <p class="arraste" aria-hidden="true">Arraste para ver mais &rarr;</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3. O ATLAS TEM · fundo cinza: 4 cards brancos com ícone ilustrado em cima (no desktop, 2x2 com o ícone à esquerda) + linha pequena -->
+<section class="secao bg-cinza" aria-labelledby="t-tem">
+  <div class="wrap">
+    <!-- EM PRODUÇÃO: as "3 partes" dependem do contrato v3, com a Parte 1 e o checklist "Estou em dia?" [[A PRODUZIR]] -->
+    <h2 id="t-tem">O Atlas da Reforma do Dentista tem 3 partes:</h2>
+    <div class="cards-ico">
+      <!-- EM PRODUÇÃO: Parte 1 inteira [[A PRODUZIR]] -->
+      <div class="card-ico"><div class="ilu"><img src="assets/img/icone-parte-1-hoje.webp" width="240" height="240" alt="" loading="lazy" decoding="async"></div><div><h3>Parte 1 · Como você está hoje</h3><p>Quais são as obrigações fiscais de um dentista? Antes de falar da reforma, a Parte 1 mostra o que vale hoje para quem atende no CPF, o que vale para quem tem CNPJ e quais obrigações você já tem.</p></div></div>
+      <div class="card-ico"><div class="ilu"><img src="assets/img/icone-parte-2-reforma.webp" width="240" height="240" alt="" loading="lazy" decoding="async"></div><div><h3>Parte 2 · O que muda com a reforma</h3><p>Mapas só da odontologia: o CNPJ e a nota em 2027, carnê-leão e IBS, Receita Saúde e nota, clínica e repasse, e as datas até 2033.</p></div></div>
+      <!-- EM PRODUÇÃO: checklist "Estou em dia?" (Parte 3) [[A PRODUZIR]] -->
+      <div class="card-ico"><div class="ilu"><img src="assets/img/icone-parte-3-conferir.webp" width="240" height="240" alt="" loading="lazy" decoding="async"></div><div><h3>Parte 3 · O que conferir e quando chamar um contador</h3><p>Você responde 5 perguntas, segue a trilha do seu caso e sai sabendo o que dá para conferir sozinho e quais pontos pedem um profissional.</p></div></div>
+      <div class="card-ico"><div class="ilu"><span class="selos-pilha" aria-hidden="true"><span class="selo-st lei">LEI</span><span class="selo-st prev">PREVISTO</span><span class="selo-st disc">EM DISCUSSÃO</span></span></div><div><h3>Selo de certeza e fonte em cada mapa</h3><p>Cada informação tem o selo dela: lei, previsto ou em discussão, com a data. A lei e o artigo ficam no pé. O que ainda não tem resposta fechada vem com o aviso "leve ao contador". Quer dizer que ali vale ouvir um profissional.</p></div></div>
+    </div>
+    <p class="linha-pq">Uma pergunta por folha, no celular ou impressa em A4.</p>
+  </div>
+</section>
+
+<!-- 4. CAIXA AZUL-MARINHO · fundo cinza: título branco em maiúsculas + 5 checks + botão verde -->
+<section class="secao bg-cinza" style="padding-top:12px" aria-labelledby="t-benef">
+  <div class="wrap">
+    <div class="caixa-escura">
+      <h2 id="t-benef">Para você entender o seu caso sem virar especialista em imposto</h2>
+      <ul class="checks">
+        <li>Chega de catar resposta de vídeo em vídeo. E aquele boato que circula entre colegas aparece do lado do que a regra diz</li>
+        <li>Você lê só o que vale para o seu jeito de atender: no CPF, em clínica ou com CNPJ</li>
+        <li>Aquela dúvida no fundo da cabeça vira uma lista que você mesmo confere<!-- EM PRODUÇÃO: checklist "Estou em dia?" [[A PRODUZIR]] --></li>
+        <li>Você reconhece quando vale procurar um contador, e não precisa decidir isso no susto<!-- EM PRODUÇÃO: checklist "Estou em dia?" [[A PRODUZIR]] --></li>
+        <li>Você vê as datas da reforma, de 2026 a 2033, e 2027 não chega de surpresa no consultório</li>
+      </ul>
+      <a href="#oferta" class="btn">Quero o Atlas do Dentista</a>
+    </div>
+  </div>
+</section>
+
+<!-- 5. FAIXA DE FOTOS · fundo rosado #fdf6f7, desliza sozinha (para com "menos movimento").
+     Fotos de uso ainda não existem: cenas montadas com as nossas páginas reais. Trocar por fotos reais (só mãos, sem rosto) quando houver. -->
+<div class="faixa-fotos bg-rosado" aria-label="O material em uso">
+  <div class="fila-fotos">
+      <div class="foto"><div class="cena r-1-1 fundo foto-real"><!-- FOTO-1-CELULAR-VIDEOS (420x525; a de 800x1000 fica para criativo), aprovada em 23/11/2026 --><img src="assets/img/foto-1-celular-videos-420.webp" width="420" height="525" alt="Mãos segurando o celular com vídeos salvos, ao lado da página impressa do mapa D05" loading="lazy" decoding="async"></div></div>
+      <div class="foto"><div class="cena r-1-1 fundo foto-real"><!-- FOTO-2-FOLHEANDO (420x525; a de 800x1000 fica para criativo), aprovada em 23/11/2026 --><img src="assets/img/foto-2-folheando-420.webp" width="420" height="525" alt="Mãos folheando as folhas impressas do Atlas na bancada" loading="lazy" decoding="async"></div></div>
+      <div class="foto"><div class="cena r-1-1 fundo foto-real"><!-- FOTO-3-MEU-CENARIO (420x525; a de 800x1000 fica para criativo), aprovada em 23/11/2026 --><img src="assets/img/foto-3-meu-cenario-420.webp" width="420" height="525" alt="Folha Meu cenário impressa sendo preenchida à caneta" loading="lazy" decoding="async"></div></div>
+      <div class="foto"><div class="cena r-1-1 fundo foto-real"><!-- FOTO-4-PAREDE (420x525; a de 800x1000 fica para criativo), aprovada em 23/11/2026 --><img src="assets/img/foto-4-parede-420.webp" width="420" height="525" alt="Linha do tempo da reforma impressa e presa na parede do consultório" loading="lazy" decoding="async"></div></div>
+      <div class="foto"><div class="cena r-1-1 fundo foto-real"><!-- FOTO-5-PERGUNTAS (420x525; a de 800x1000 fica para criativo), aprovada em 23/11/2026 --><img src="assets/img/foto-5-perguntas-420.webp" width="420" height="525" alt="Folha Perguntas para o contador impressa ao lado do celular" loading="lazy" decoding="async"></div></div>
+      <!-- cópia para o loop -->
+      <div class="foto" aria-hidden="true"><div class="cena r-1-1 fundo foto-real"><!-- FOTO-1-CELULAR-VIDEOS (420x525; a de 800x1000 fica para criativo), aprovada em 23/11/2026 --><img src="assets/img/foto-1-celular-videos-420.webp" width="420" height="525" alt="" loading="lazy" decoding="async"></div></div>
+      <div class="foto" aria-hidden="true"><div class="cena r-1-1 fundo foto-real"><!-- FOTO-2-FOLHEANDO (420x525; a de 800x1000 fica para criativo), aprovada em 23/11/2026 --><img src="assets/img/foto-2-folheando-420.webp" width="420" height="525" alt="" loading="lazy" decoding="async"></div></div>
+      <div class="foto" aria-hidden="true"><div class="cena r-1-1 fundo foto-real"><!-- FOTO-3-MEU-CENARIO (420x525; a de 800x1000 fica para criativo), aprovada em 23/11/2026 --><img src="assets/img/foto-3-meu-cenario-420.webp" width="420" height="525" alt="" loading="lazy" decoding="async"></div></div>
+      <div class="foto" aria-hidden="true"><div class="cena r-1-1 fundo foto-real"><!-- FOTO-4-PAREDE (420x525; a de 800x1000 fica para criativo), aprovada em 23/11/2026 --><img src="assets/img/foto-4-parede-420.webp" width="420" height="525" alt="" loading="lazy" decoding="async"></div></div>
+      <div class="foto" aria-hidden="true"><div class="cena r-1-1 fundo foto-real"><!-- FOTO-5-PERGUNTAS (420x525; a de 800x1000 fica para criativo), aprovada em 23/11/2026 --><img src="assets/img/foto-5-perguntas-420.webp" width="420" height="525" alt="" loading="lazy" decoding="async"></div></div>
+  </div>
+</div>
+
+<!-- 6. PERGUNTA DE DOR · fundo creme: título em maiúsculas + linha laranja + botão -->
+<section class="dor bg-creme" aria-label="Pergunta de dor">
+  <div class="wrap">
+    <h2>Um vídeo de PF, outro de PJ, outro do Receita Saúde. E você só queria que alguém explicasse o que importa para o seu caso.</h2>
+    <p class="urg">Preço de lançamento até <span class="falta">[[DATA FIM DA OFERTA]]</span>.</p>
+    <a href="#oferta" class="btn">Quero o Atlas do Dentista</a>
+  </div>
+</section>
+
+<!-- 7. É PARA O DENTISTA QUE QUER · fundo cinza: 6 cards com check, título em maiúsculas e uma linha (no desktop, 3x2) -->
+<section class="secao bg-cinza" aria-labelledby="t-ideal">
+  <div class="wrap">
+    <h2 id="t-ideal">É para o dentista que quer</h2>
+    <div class="ideal">
+      <!-- EM PRODUÇÃO: checklist "Estou em dia?" [[A PRODUZIR]] -->
+      <div class="card-ideal"><div class="ck ilu-ideal"><img src="assets/img/icone-ideal-1-contador.webp" width="240" height="240" alt="" loading="lazy" decoding="async"></div><div><h3>Saber se precisa de contador, e quando procurar um</h3><p>Hoje é você quem cuida disso. O checklist mostra o que conferir sozinho e o sinal de que vale procurar ajuda.</p></div></div>
+      <!-- EM PRODUÇÃO: "As obrigações do dentista" [[A PRODUZIR]] -->
+      <div class="card-ideal"><div class="ck ilu-ideal"><img src="assets/img/icone-ideal-2-obrigacoes.webp" width="240" height="240" alt="" loading="lazy" decoding="async"></div><div><h3>Conferir as suas obrigações de dentista</h3><p>Para quando bate o "e se eu estiver fazendo alguma coisa errada?": o que pagar, o que emitir e quando.</p></div></div>
+      <!-- EM PRODUÇÃO: "PF ou PJ: o que pesar antes de decidir" [[A PRODUZIR]] -->
+      <div class="card-ideal"><div class="ck ilu-ideal"><img src="assets/img/icone-ideal-3-pf-pj.webp" width="240" height="240" alt="" loading="lazy" decoding="async"></div><div><h3>Entender PF ou PJ sem ninguém empurrar para um lado</h3><p>Para o "será que estou pagando imposto demais e nem sei?". Ele não faz a conta por você: mostra o que pesa em cada lado, e quem escolhe é você.</p></div></div>
+      <div class="card-ideal"><div class="ck ilu-ideal"><img src="assets/img/icone-ideal-4-consultorio.webp" width="240" height="240" alt="" loading="lazy" decoding="async"></div><div><h3>Saber o que a reforma muda no seu consultório</h3><p>Todo mundo fala dela. Aqui estão o CNPJ e a nota de 2027, o carnê-leão ao lado do IBS/CBS e o Receita Saúde junto da nota.</p></div></div>
+      <div class="card-ideal"><div class="ck ilu-ideal"><img src="assets/img/icone-ideal-5-clinica-colega.webp" width="240" height="240" alt="" loading="lazy" decoding="async"></div><div><h3>Saber o que perguntar se atende em clínica de colega</h3><p>Recebe porcentagem? A nota vai para quem? O que já tem regra e o que ainda não tem resposta fechada.</p></div></div>
+      <!-- EM PRODUÇÃO: Parte 1, "Dentista pessoa física hoje: carnê-leão, livro-caixa e imposto de renda" [[A PRODUZIR]] -->
+      <div class="card-ideal"><div class="ck ilu-ideal"><img src="assets/img/icone-ideal-6-recibos.webp" width="240" height="240" alt="" loading="lazy" decoding="async"></div><div><h3>Pôr ordem nos recibos e nos comprovantes</h3><p>Um recibo para cada pagamento e o comprovante que vale no livro-caixa. A cadeira, por exemplo, fica fora dele.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. TUDO O QUE VEM + BÔNUS · fundo rosa claro #ffe6e6: título + cartão creme (pílula, título, linha, mockup, lista com linhas)
+     + "E não para por aí" + bônus em cards grandes (imagem, título, texto, checks e selo com o volume real).
+     Sem "Valor: R$ 27" e sem soma de valores (decisão de 23/11/2026). -->
+<section class="secao bg-rosa" aria-labelledby="t-recebe">
+  <div class="wrap">
+    <h2 id="t-recebe">Tudo o que vem no Atlas da Reforma do Dentista</h2>
+    <div class="recebe-card">
+      <span class="pilula-verde">A4 E CELULAR</span>
+      <h3>Uma pergunta por folha</h3>
+      <!-- EM PRODUÇÃO: as "três partes" dependem do contrato v3 [[A PRODUZIR]] -->
+      <p class="apoio">São três partes, uma pergunta por folha. Dá para ler no celular ou imprimir.</p>
+      <div class="mock"><div class="cena" role="img" aria-label="A capa e páginas do Caderno do Dentista"><!-- IMG-PLANO-ENTRADA (800x800): miniatura do mockup da seção 7. Nada que não esteja no plano. · Hoje: páginas reais do PDF em assets/produto/. Para trocar, substitua o arquivo com o mesmo nome. --><div class="folha p" style="left:4%;top:12%;width:30%;--r:-8deg"><img src="assets/produto/p-atlas-checklist.webp" width="260" height="368" alt="" decoding="async" loading="lazy"></div><div class="folha p" style="left:60%;top:12%;width:30%;--r:8deg"><img src="assets/produto/p-atlas-d05.webp" width="260" height="368" alt="" decoding="async" loading="lazy"></div><div class="folha p" style="left:33%;top:4%;width:31%"><img src="assets/produto/p-atlas-capa.webp" width="260" height="368" alt="" decoding="async" loading="lazy"></div><div class="cel p" style="left:79%;top:34%;width:17%;--r:5deg"><img src="assets/produto/p-cel-d05.webp" width="220" height="392" alt="" decoding="async" loading="lazy"></div></div></div>
+      <!-- EM PRODUÇÃO: Parte 1 inteira (itens 1 a 5) [[A PRODUZIR]] -->
+      <span class="parte-t">Parte 1 · Como você está hoje</span>
+      <ul class="checks linhas">
+        <li>Dentista pessoa física hoje: carnê-leão, livro-caixa e imposto de renda</li>
+        <li>Dentista com CNPJ hoje</li>
+        <li>PF ou PJ: o que pesar antes de decidir</li>
+        <li>As obrigações do dentista</li>
+        <li>Receita Saúde: o recibo do dentista</li>
+      </ul>
+      <span class="parte-t">Parte 2 · O que muda com a reforma (mapas já prontos)</span>
+      <ul class="checks linhas">
+        <li>Os mapas do Núcleo da reforma, o que vale para todo profissional que presta serviço</li>
+        <li>Os mapas só da odontologia (o Caderno do Dentista)</li>
+        <li>Dentista pessoa física: o que muda em 2027 · Dentista pessoa física: sou contribuinte?</li>
+        <li>ISS fixo, carnê-leão e IBS/CBS: três coisas diferentes</li>
+        <li>Os dois documentos do dentista em 2027: nota fiscal e recibo do Receita Saúde</li>
+        <li>Os casos do consultório: CPF, porcentagem em clínica de colega, dono de clínica, prótese, clareamento caseiro e convênio</li>
+        <li>Calendário do dentista de 2026 a 2033 · O que ainda está em aberto · Glossário visual da reforma</li>
+      </ul>
+      <span class="parte-t">Parte 3 · O que conferir e quando chamar um contador</span>
+      <ul class="checks linhas">
+        <!-- EM PRODUÇÃO: checklist "Estou em dia?" [[A PRODUZIR]] -->
+        <li>Meu cenário · Perguntas para o contador (para usar se um dia você procurar um) · Checklist 2026 e 2027 · Atualizações · Checklist "Estou em dia?"</li>
+        <!-- recontar folhas e telas quando a Parte 1 entrar; hoje: 50 folhas e 170 telas -->
+        <li>Versão A4 e versão para celular</li>
+      </ul>
+      <p class="fecho">Conteúdo educativo, atualizado em 22/11/2026. Não substitui contador.</p>
+    </div>
+
+    <div class="tem-mais">
+      <h2 id="t-bonus">No Atlas Completo, você leva mais 6 bônus</h2>
+      <p class="italico">Para decidir com calma, saber as datas do ano antes de elas chegarem e olhar a clínica também.</p>
+      <span class="pilula-verm">Só no Atlas Completo</span>
+    </div>
+    <div class="lista-bonus">
+      <article class="bonus"><!-- Bônus #1: texto e foto prontos -->
+        <div class="img"><div class="cena foto"><!-- IMG-BONUS-1 (800x600, 4:3, igual ao quadro .cena): foto do "Guia PF ou PJ?" feita no Flow, assets/img/bonus-1.webp. Para trocar, substitua o arquivo com o mesmo nome. --><img src="assets/img/bonus-1.webp" width="800" height="600" alt="Capa do Guia PF ou PJ? sobre a mesa, ao lado do verso do material e de uma caneta" loading="lazy" decoding="async"></div></div>
+        <div class="corpo">
+          <span class="tag">BÔNUS #1</span>
+          <h3>Guia PF ou PJ?</h3>
+          <p class="desc">Os caminhos lado a lado, com as perguntas que pesam em cada um.</p>
+          <ul class="checks"><li>Quanto você fatura e quanto gasta</li><li>Quem te paga e como o dinheiro chega até você</li><li>O que perguntar a um contador antes de abrir ou fechar CNPJ</li><li>Ele não diz qual é melhor, porque isso depende do seu caso</li></ul>
+          <span class="volume">Vem com: <b>15 folhas</b></span>
+        </div>
+      </article>
+      <article class="bonus"><!-- Bônus #2: texto e foto prontos. Sem "numa folha só" (o bônus tem 19 folhas, supervisor 23/11/2026) -->
+        <div class="img"><div class="cena foto"><!-- IMG-BONUS-2 (800x600, 4:3, igual ao quadro .cena): foto do "Calendário fiscal do dentista" feita no Flow, assets/img/bonus-2.webp. Para trocar, substitua o arquivo com o mesmo nome. --><img src="assets/img/bonus-2.webp" width="800" height="600" alt="Capa do Calendário fiscal do dentista ao lado de um calendário de mesa" loading="lazy" decoding="async"></div></div>
+        <div class="corpo">
+          <span class="tag">BÔNUS #2</span>
+          <h3>Calendário fiscal do dentista</h3>
+          <p class="desc">O ano todo numa folha de parede, mais uma folha por mês.</p>
+          <ul class="checks"><li>Carnê-leão</li><li>INSS</li><li>Receita Saúde</li><li>DAS</li></ul>
+          <span class="volume">Vem com: <b>19 folhas</b></span>
+        </div>
+      </article>
+      <article class="bonus"><!-- Bônus #3: texto e foto prontos -->
+        <div class="img"><div class="cena foto"><!-- IMG-BONUS-3 (800x600, 4:3, igual ao quadro .cena): foto do "Receita Saúde sem complicação" feita no Flow, assets/img/bonus-3.webp. Para trocar, substitua o arquivo com o mesmo nome. --><img src="assets/img/bonus-3.webp" width="800" height="600" alt="Capa do Receita Saúde sem complicação ao lado de um celular e de um recibo impresso" loading="lazy" decoding="async"></div></div>
+        <div class="corpo">
+          <span class="tag">BÔNUS #3</span>
+          <h3>Receita Saúde sem complicação</h3>
+          <p class="desc">O recibo do dia a dia.</p>
+          <ul class="checks"><li>Quando emitir</li><li>Como emitir pelo celular ou pelo computador</li><li>Como uma secretária pode emitir por você, se você tiver uma</li></ul>
+          <span class="volume">Vem com: <b>12 folhas</b></span>
+        </div>
+      </article>
+      <article class="bonus">
+        <div class="img"><div class="cena fundo f-creme" role="img" aria-label="A capa do Caderno da Clínica e páginas dos mapas C01, C04 e C08"><!-- IMG-BONUS-4 (800x600): capa do "Caderno da Clínica" + folhas em leque (C01, C04, C08) · Hoje: páginas reais do PDF em assets/produto/. Para trocar, substitua o arquivo com o mesmo nome. --><div class="folha p" style="left:5%;top:16%;width:28%;--r:-12deg"><img src="assets/produto/p-clinica-c01.webp" width="260" height="368" alt="" decoding="async" loading="lazy"></div><div class="folha p" style="left:21%;top:8%;width:28%;--r:-4deg"><img src="assets/produto/p-clinica-c04.webp" width="260" height="368" alt="" decoding="async" loading="lazy"></div><div class="folha p" style="left:37%;top:6%;width:28%;--r:4deg"><img src="assets/produto/p-clinica-c08.webp" width="260" height="368" alt="" decoding="async" loading="lazy"></div><div class="folha p" style="left:56%;top:12%;width:32%;--r:8deg"><img src="assets/produto/p-clinica-capa.webp" width="260" height="368" alt="" decoding="async" loading="lazy"></div></div></div>
+        <div class="corpo">
+          <span class="tag">BÔNUS #4</span>
+          <h3>Caderno da Clínica (8 mapas)</h3>
+          <p class="desc">Para quem tem consultório com CNPJ.</p>
+          <ul class="checks"><li>A clínica no Simples</li><li>As compras que geram crédito</li><li>Dentistas parceiros e repasse</li><li>Prótese e laboratório</li><li>A nota da clínica em 2027</li><li>A folha Perguntas da clínica para o contador</li></ul>
+          <span class="volume">Vem com: <b>8 mapas</b></span>
+        </div>
+      </article>
+      <article class="bonus">
+        <div class="img"><div class="cena fundo f-azul" role="img" aria-label="Print da aba Calculadora da planilha"><!-- IMG-BONUS-5 (800x534): print da planilha em branco · Hoje: páginas reais do PDF em assets/produto/. Para trocar, substitua o arquivo com o mesmo nome. --><div class="planilha-print p" style="left:13%;top:4%;width:74%;--r:-2deg"><img src="assets/produto/g-calculadora.webp" width="688" height="645" alt="Print da aba Calculadora da planilha" decoding="async" loading="lazy"></div></div></div>
+        <div class="corpo">
+          <span class="tag">BÔNUS #5</span>
+          <h3>Calculadora do crédito do cliente empresa</h3>
+          <p class="desc">Quando quem paga a sua nota é uma empresa, a calculadora mostra quanto de crédito a sua nota gera para ela.</p>
+          <ul class="checks"><li>7 caminhos</li><li>A alíquota da CBS é editável: começa nos 11,3% que o TCU calculou, e quem decide é o Senado</li><li>Excel e Google Sheets</li></ul>
+          <span class="volume">Vem com: <b>7 caminhos</b></span>
+        </div>
+      </article>
+      <article class="bonus">
+        <div class="img"><div class="cena fundo f-rosa" role="img" aria-label="A capa do Planner da transição e as folhas de 2026 e 2027"><!-- IMG-BONUS-6 (800x600, 4:3): folha de um ano do Planner · Hoje: páginas reais do PDF em assets/produto/. Para trocar, substitua o arquivo com o mesmo nome. --><div class="folha p" style="left:12%;top:12%;width:33%;--r:-10deg"><img src="assets/produto/p-planner-2027.webp" width="260" height="368" alt="" decoding="async" loading="lazy"></div><div class="folha p" style="left:33%;top:7%;width:33%;--r:-2deg"><img src="assets/produto/p-planner-2026.webp" width="260" height="368" alt="" decoding="async" loading="lazy"></div><div class="folha p" style="left:54%;top:11%;width:33%;--r:7deg"><img src="assets/produto/p-planner-capa.webp" width="260" height="368" alt="" decoding="async" loading="lazy"></div></div></div>
+        <div class="corpo">
+          <span class="tag">BÔNUS #6</span>
+          <h3>Planner da transição 2026 a 2033</h3>
+          <p class="desc">Uma folha por ano: o que muda e as datas.</p>
+          <ul class="checks"><li>As notas que você emitiu, mês a mês</li><li>As notas de compra</li><li>O DAS ou a apuração</li><li>Para imprimir</li></ul>
+          <span class="volume">Vem com: <b>8 folhas anuais</b></span>
+        </div>
+      </article>
+    </div>
+    <p class="volume-total">6 bônus: 46 folhas de guias, 8 mapas da clínica, 8 folhas anuais e 1 calculadora.<span class="preco-l">No lançamento, você leva tudo por <b>R$ 27,90</b>.</span></p>
+  </div>
+</section>
+
+<!-- 9. PLANOS + POP-UP · fundo azul claro #eff6ff: pílula vermelha com a data real + título + traço + 2 cards (entrada à esquerda, completo à direita)
+     + cartão de reforço embaixo. Sem preço riscado, sem "você economiza", sem "92%", sem "mais vendido" e sem cronômetro (decisão de 23/11/2026).
+     "Recomendado" é opinião nossa, não dado. Na data, o preço sobe de verdade e não volta. -->
+<section class="secao bg-azul" id="oferta" aria-labelledby="t-oferta">
+  <div class="wrap">
+    <div class="faixa-urg">Preço de lançamento até <span class="falta">[[DATA FIM DA OFERTA]]</span>. Depois, o preço sobe.</div>
+    <h2 id="t-oferta">Escolha o seu</h2>
+    <div class="divisor" aria-hidden="true"></div>
+    <div class="planos">
+      <div class="plano">
+        <h3>Caderno do Dentista</h3>
+        <p class="pra">O Atlas da Reforma do Dentista completo, em mapas</p>
+        <div class="img"><div class="cena" role="img" aria-label="A capa e páginas do Caderno do Dentista"><!-- IMG-PLANO-ENTRADA (800x800): miniatura do mockup da seção 7. Nada que não esteja no plano. · Hoje: páginas reais do PDF em assets/produto/. Para trocar, substitua o arquivo com o mesmo nome. --><div class="folha p" style="left:4%;top:12%;width:30%;--r:-8deg"><img src="assets/produto/p-atlas-checklist.webp" width="260" height="368" alt="" decoding="async" loading="lazy"></div><div class="folha p" style="left:60%;top:12%;width:30%;--r:8deg"><img src="assets/produto/p-atlas-d05.webp" width="260" height="368" alt="" decoding="async" loading="lazy"></div><div class="folha p" style="left:33%;top:4%;width:31%"><img src="assets/produto/p-atlas-capa.webp" width="260" height="368" alt="" decoding="async" loading="lazy"></div><div class="cel p" style="left:79%;top:34%;width:17%;--r:5deg"><img src="assets/produto/p-cel-d05.webp" width="220" height="392" alt="" decoding="async" loading="lazy"></div></div></div>
+        <p class="rotulo">Você recebe:</p>
+        <ul class="checks linhas">
+          <li>Parte 1, Como você está hoje<!-- EM PRODUÇÃO [[A PRODUZIR]] --></li>
+          <li>Parte 2, os mapas da reforma (o Núcleo e os mapas só da odontologia)</li>
+          <li>Parte 3, Meu cenário, Perguntas para o contador, Checklist "Estou em dia?", Checklist 2026 e 2027 e Atualizações<!-- EM PRODUÇÃO: checklist "Estou em dia?" [[A PRODUZIR]] --></li>
+          <li>Versão A4 e celular</li>
+        </ul>
+        <div class="preco"><small>R$</small>17,90</div>
+        <!-- [[PREÇO DEPOIS DO LANÇAMENTO]] = preço da ENTRADA depois da data -->
+        <p class="depois">até <span class="falta">[[DATA FIM DA OFERTA]]</span>. Depois, R$ <span class="falta">[[PREÇO DEPOIS DO LANÇAMENTO]]</span>.</p>
+        <p class="unico">pagamento único</p>
+        <div class="garantia-mini"><img class="selo-g" src="assets/img/selo-garantia-verde-300.webp" srcset="assets/img/selo-garantia-verde-300.webp 300w, assets/img/selo-garantia-verde.webp 600w" sizes="64px" width="64" height="64" alt="Selo de 7 dias de garantia" loading="lazy" decoding="async">Garantia de 7 dias</div>
+        <a href="https://pay.wiapy.com/f9hwjY-Xt1xz" class="btn azul" data-abre-popup="1" data-checkout="basico" data-value="17.90" data-name="Caderno do Dentista">Quero o Caderno do Dentista</a>
+      </div>
+
+      <div class="plano top">
+        <span class="selo-top">RECOMENDADO</span>
+        <h3>Atlas Completo do Dentista</h3>
+        <p class="pra">Tudo do Caderno do Dentista e mais 6 bônus</p>
+        <div class="img"><div class="cena" role="img" aria-label="As 3 partes do Atlas e os 6 bônus"><!-- IMG-PLANO-COMPLETO (800x800): a miniatura da entrada + as 6 capas de bônus · Bônus #1 a #3 com as fotos de assets/img/bonus-1 a 3.webp (recortadas na capa); o resto são páginas reais de assets/produto/. --><div class="folha p" style="left:0%;top:16%;width:19%;--r:-16deg"><img src="assets/img/bonus-1.webp" width="800" height="600" alt="" decoding="async" loading="lazy" style="object-position:29% 50%"></div><div class="folha p" style="left:15%;top:7%;width:19%;--r:-9deg"><img src="assets/img/bonus-2.webp" width="800" height="600" alt="" decoding="async" loading="lazy" style="object-position:15% 50%"></div><div class="folha p" style="left:30%;top:2%;width:19%;--r:-3deg"><img src="assets/img/bonus-3.webp" width="800" height="600" alt="" decoding="async" loading="lazy" style="object-position:9% 50%"></div><div class="folha p" style="left:50%;top:2%;width:19%;--r:3deg"><img src="assets/produto/p-clinica-capa.webp" width="260" height="368" alt="" decoding="async" loading="lazy"></div><div class="folha p planilha" style="left:65%;top:7%;width:19%;--r:9deg"><img src="assets/produto/g-calculadora.webp" width="688" height="645" alt="" decoding="async" loading="lazy"></div><div class="folha p" style="left:80%;top:16%;width:19%;--r:16deg"><img src="assets/produto/p-planner-capa.webp" width="260" height="368" alt="" decoding="async" loading="lazy"></div><div class="folha p" style="left:16%;top:38%;width:23%;--r:-6deg"><img src="assets/produto/p-atlas-checklist.webp" width="260" height="368" alt="" decoding="async" loading="lazy"></div><div class="folha p" style="left:60%;top:38%;width:23%;--r:6deg"><img src="assets/produto/p-atlas-d05.webp" width="260" height="368" alt="" decoding="async" loading="lazy"></div><div class="folha p" style="left:38%;top:33%;width:24%"><img src="assets/produto/p-atlas-capa.webp" width="260" height="368" alt="" decoding="async" loading="lazy"></div><span class="selo-39 pq p" style="right:0;bottom:0;--r:-8deg"><b>+6</b>bônus</span></div></div>
+        <span class="destaque-bonus">Por R$ 10 a mais, você leva os 6 bônus.</span>
+        <ul class="checks linhas">
+          <li>Tudo do Caderno do Dentista</li>
+          <!-- Bônus #1 a #3: miniatura = foto de assets/img/bonus-N.webp recortada na capa -->
+          <li class="extra"><span class="mini-capa" aria-hidden="true"><div class="folha"><img src="assets/img/bonus-1.webp" width="800" height="600" alt="" decoding="async" loading="lazy" style="object-position:29% 50%"></div></span><b>Bônus #1</b> Guia PF ou PJ?</li>
+          <li class="extra"><span class="mini-capa" aria-hidden="true"><div class="folha"><img src="assets/img/bonus-2.webp" width="800" height="600" alt="" decoding="async" loading="lazy" style="object-position:15% 50%"></div></span><b>Bônus #2</b> Calendário fiscal do dentista</li>
+          <li class="extra"><span class="mini-capa" aria-hidden="true"><div class="folha"><img src="assets/img/bonus-3.webp" width="800" height="600" alt="" decoding="async" loading="lazy" style="object-position:9% 50%"></div></span><b>Bônus #3</b> Receita Saúde sem complicação</li>
+          <li class="extra"><span class="mini-capa" aria-hidden="true"><div class="folha" ><img src="assets/produto/p-clinica-capa.webp" width="260" height="368" alt="" decoding="async" loading="lazy"></div></span><b>Bônus #4</b> Caderno da Clínica (8 mapas)</li>
+          <li class="extra"><span class="mini-capa" aria-hidden="true"><div class="folha planilha" ><img src="assets/produto/g-calculadora.webp" width="688" height="645" alt="" decoding="async" loading="lazy"></div></span><b>Bônus #5</b> Calculadora do crédito do cliente empresa</li>
+          <li class="extra"><span class="mini-capa" aria-hidden="true"><div class="folha" ><img src="assets/produto/p-planner-capa.webp" width="260" height="368" alt="" decoding="async" loading="lazy"></div></span><b>Bônus #6</b> Planner da transição 2026 a 2033</li>
+        </ul>
+        <div class="preco"><small>R$</small>27,90</div>
+        <!-- [[PREÇO DEPOIS DO LANÇAMENTO]] = preço do COMPLETO depois da data -->
+        <p class="depois">até <span class="falta">[[DATA FIM DA OFERTA]]</span>. Depois, R$ <span class="falta">[[PREÇO DEPOIS DO LANÇAMENTO]]</span>.</p>
+        <p class="unico">pagamento único</p>
+        <div class="garantia-mini"><img class="selo-g" src="assets/img/selo-garantia-verde-300.webp" srcset="assets/img/selo-garantia-verde-300.webp 300w, assets/img/selo-garantia-verde.webp 600w" sizes="64px" width="64" height="64" alt="Selo de 7 dias de garantia" loading="lazy" decoding="async">Garantia de 7 dias</div>
+        <a href="https://pay.wiapy.com/r-BNr9dQ9GE4" class="btn" data-checkout="completo" data-value="27.90" data-name="Atlas Completo do Dentista">Quero o Atlas Completo</a>
+      </div>
+    </div>
+
+    <!-- Reforço · copy v5, seção 10: no lugar do cartão com check que fica embaixo dos planos na referência. Sem botão (já está na oferta). -->
+    <div class="reforco">
+      <div class="ck"><svg viewBox="0 0 48 48" aria-hidden="true" focusable="false"><circle cx="24" cy="26" r="17" fill="#c9f0d4"/><path d="M8 26l11 11L41 13" fill="none" stroke="#21a35a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div><h3>Em 10 a 15 minutos você sabe quais mapas são seus</h3>
+      <p>Você abre a folha Meu cenário, responde 5 perguntas e segue as setas até os mapas do seu caso. No caminho, vai marcando na folha Perguntas para o contador o que vale para você. E volta para o paciente da próxima hora sabendo por onde começar.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 10. DEPOIMENTOS · fundo branco: PLACEHOLDER no formato dos cards da referência. Volta só com depoimento real de dentista que comprou
+     e autorizou por escrito, com print guardado. Nunca rosto de IA, nunca cargo inventado. Na publicação, sem depoimento real, a seção sai. -->
+<section class="secao bg-branco" aria-label="Espaço reservado para depoimentos">
+  <div class="wrap">
+    <p class="dep-nota">Depoimentos reais entram depois.</p>
+    <div class="deps" aria-hidden="true">
+      <div class="dep-ph"><div class="av"></div>Depoimento real 1<div class="tr"></div><div class="tr"></div></div>
+      <div class="dep-ph"><div class="av"></div>Depoimento real 2<div class="tr"></div><div class="tr"></div></div>
+      <div class="dep-ph"><div class="av"></div>Depoimento real 3<div class="tr"></div><div class="tr"></div></div>
+    </div>
+    <a href="#oferta" class="btn">Quero o Atlas do Dentista</a>
+  </div>
+</section>
+
+<!-- 11. GARANTIA DE 7 DIAS · fundo #f8fdff: selo grande (em cima no celular, à esquerda no desktop) + título + lista com linhas + texto -->
+<section class="secao bg-garantia" aria-labelledby="t-garantia">
+  <div class="wrap">
+    <div class="garantia">
+      <img class="selo-g grande" src="assets/img/selo-garantia-verde-300.webp" srcset="assets/img/selo-garantia-verde-300.webp 300w, assets/img/selo-garantia-verde.webp 600w" sizes="210px" width="210" height="210" alt="Selo de 7 dias de garantia" loading="lazy" decoding="async">
+      <div>
+        <h2 id="t-garantia">Garantia de 7 dias</h2>
+        <p>Você tem 7 dias para abrir, ler e imprimir os mapas. Se nesse tempo você achar que:</p>
+        <ul class="lista-ponto">
+          <li>o material não deixou o seu caso mais claro,</li>
+          <li>os mapas não ajudaram você a saber o que conferir,</li>
+          <li>ou simplesmente não quiser ficar com ele,</li>
+        </ul>
+        <p>é só mandar um e-mail para <span class="falta">[[e-mail de suporte]]</span> e a gente devolve 100% do valor. Ninguém vai pedir explicação.</p>
+        <p class="verde">A garantia existe porque você está pagando por uma coisa que ainda não viu. É justo poder ver antes de decidir.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 12. COMO VOCÊ RECEBE · fundo branco: 4 passos com ícone ilustrado (4 colunas no desktop). Sem botão.
+     Conferir formas de pagamento e canal de acesso com a plataforma. -->
+<section class="secao bg-branco" id="pos-compra" aria-labelledby="t-acesso">
+  <div class="wrap">
+    <h2 id="t-acesso">Como você recebe</h2>
+    <ol class="passos">
+      <li class="passo"><img src="assets/img/icone-passo-1-pague.webp" width="240" height="240" alt="" loading="lazy" decoding="async"><h3>Pague no Pix ou no cartão.</h3><p>O Pix aprova na hora; o cartão, em minutos.</p></li>
+      <li class="passo"><img src="assets/img/icone-passo-2-acesso.webp" width="240" height="240" alt="" loading="lazy" decoding="async"><h3>Receba o acesso.</h3><p>Chega <span class="falta">[[no e-mail / área de membros / WhatsApp]]</span>.</p></li>
+      <li class="passo"><img src="assets/img/icone-passo-3-celular-a4.webp" width="240" height="240" alt="" loading="lazy" decoding="async"><h3>Abra no celular ou imprima em A4.</h3><p>Tem uma versão feita para a tela e outra para qualquer impressora.</p></li>
+      <li class="passo"><img src="assets/img/icone-passo-4-meu-cenario.webp" width="240" height="240" alt="" loading="lazy" decoding="async"><h3>Comece pela folha Meu cenário.</h3><p>É ela que mostra por qual mapa começar.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 13. FAQ · fundo branco: título + acordeão com linhas (uma aberta por vez) + CTA final da copy (fecho da FAQ) -->
+<section class="secao bg-branco" style="padding-top:20px" aria-labelledby="t-faq">
+  <div class="wrap">
+    <h2 id="t-faq">Perguntas frequentes</h2>
+    <div class="faq">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="true" aria-controls="r1" id="p1">Ainda não tenho contador. Serve para mim? Vou precisar contratar um mesmo assim?</button>
+        <div class="faq-a" id="r1" role="region" aria-labelledby="p1">Serve. Foi pensado justamente para quem ainda cuida disso sozinho. O Atlas não faz a sua conta nem decide se você fica no CPF ou abre empresa: isso é trabalho de contador. Ele mostra o que vale para o seu jeito de atender, o que você confere por conta própria<!-- EM PRODUÇÃO: checklist "Estou em dia?" [[A PRODUZIR]] --> e quais pontos pedem um profissional. Se aparecerem vários no seu caso, vale procurar um, e você já chega sabendo o que perguntar.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="true" aria-controls="r2" id="p2">Isso se aplica mesmo a dentista?</button>
+        <div class="faq-a" id="r2" role="region" aria-labelledby="p2">Aplica. Além dos mapas que valem para todo profissional que presta serviço, tem mapas só da odontologia, com os casos do consultório: quem atende no CPF, quem recebe porcentagem em clínica de colega, dono de clínica, prótese, clareamento caseiro e convênio. O Receita Saúde, que é do imposto de renda e é obrigatório para o dentista que atende como pessoa física desde 2025, tem folha própria.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="true" aria-controls="r3" id="p3">É muito complicado? Funciona no celular?</button>
+        <div class="faq-a" id="r3" role="region" aria-labelledby="p3">Não é, e nem precisa entender de imposto. É uma pergunta por folha, com seta, exemplo e palavra do dia a dia, e o termo técnico vem explicado no Glossário visual. Tem uma versão feita para a tela do celular e outra em A4 para imprimir.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="true" aria-controls="r4" id="p4">As informações são confiáveis? E se as regras mudarem?</button>
+        <div class="faq-a" id="r4" role="region" aria-labelledby="p4">Cada mapa traz no pé a lei e o artigo de onde a informação saiu, para você mesmo conferir. Cada informação tem selo (lei, previsto ou em discussão) e a data em que foi conferida. O que ainda não tem resposta fechada vem marcado. E o material é independente: não é do governo, da Receita nem do CRO. Vão mudar, porque a reforma ainda está em andamento. Por isso cada informação tem o selo e a data, e a folha Atualizações serve para você anotar o que mudou e em qual mapa.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="true" aria-controls="r5" id="p5">Não acho isso de graça?</button>
+        <div class="faq-a" id="r5" role="region" aria-labelledby="p5">Boa parte, sim. Só que está espalhada em lei, live, post e vídeo, e quase tudo foi feito para empresa ou para contador. O Atlas junta, deixa só o que é do dentista, marca o que é certo e o que está em aberto e põe numa ordem que você começa a usar em 15 minutos.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="true" aria-controls="r6" id="p6">Vou pagar duas vezes? E receber por Pix muda alguma coisa?</button>
+        <div class="faq-a" id="r6" role="region" aria-labelledby="p6">São coisas diferentes. Carnê-leão é imposto de renda. IBS e CBS são tributos sobre o serviço que você presta, e o CNPJ da pessoa física contribuinte é só para eles. Um não substitui o outro. Quanto cada um pesa no seu caso ainda depende de duas coisas: da alíquota da CBS, que o Senado ainda não fixou, e do jeito que você atende. O mapa "ISS fixo, carnê-leão e IBS/CBS: três coisas diferentes" põe os três lado a lado. O Pix não muda as regras. A própria Receita diz que não existe tributação de Pix nem de movimentação financeira. Se você atende como pessoa física, o pagamento de paciente que chega por Pix entra no carnê-leão e gera o Receita Saúde como qualquer outro pagamento.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="true" aria-controls="r7" id="p7">É pagamento único? E se eu não gostar?</button>
+        <div class="faq-a" id="r7" role="region" aria-labelledby="p7">É pagamento único: você paga uma vez, no Pix ou no cartão, e não tem mensalidade. E tem garantia de 7 dias: se não gostar, é só mandar um e-mail para <span class="falta">[[e-mail de suporte]]</span> e a gente devolve 100% do valor. Ninguém vai pedir explicação.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="true" aria-controls="r8" id="p8">Qual a diferença entre os planos?</button>
+        <div class="faq-a" id="r8" role="region" aria-labelledby="p8">O Caderno do Dentista, de R$ 17,90, tem o Atlas da Reforma do Dentista completo, com as 3 partes. O Atlas Completo do Dentista, de R$ 27,90, tem tudo do Caderno e mais 6 bônus: Guia PF ou PJ?, Calendário fiscal do dentista, Receita Saúde sem complicação, Caderno da Clínica, Calculadora do crédito do cliente empresa e Planner da transição 2026 a 2033.</div>
+      </div>
+    </div>
+    <div class="fecho-final" id="final">
+      <h2 id="t-final">Saiba onde está pisando antes de 2027</h2>
+      <p>Abra a folha Meu cenário, responda 5 perguntas e veja quais mapas são do seu caso. Preço de lançamento até <span class="falta">[[DATA FIM DA OFERTA]]</span>.</p>
+      <a href="#oferta" class="btn">Quero o Atlas do Dentista</a>
+    </div>
+  </div>
+</section>
+
+<!-- 14. RODAPÉ · fundo preto -->
+<footer>
+  <div class="wrap">
+    <!-- MARCA PANORÂMICA: versão branca sobre o rodapé preto; área de proteção = altura do "P" (~15 px) -->
+    <img class="logo-rodape" src="assets/marca/logo-horizontal-branco.svg" width="726" height="166" alt="Panorâmica do Dentista" loading="lazy" decoding="async">
+    <p class="dir">Atlas da Reforma do Dentista · Panorâmica do Dentista. Direitos reservados</p>
+    <p>Atlas da Reforma do Dentista · © 2026 · todos os direitos reservados. Proibida a cópia ou a revenda do material, no todo ou em parte (Lei 9.610/98).</p>
+    <p>Conteúdo educativo, atualizado em 22/11/2026. Não substitui contador.</p>
+    <p>Material independente. Não é do governo, da Receita Federal, do Comitê Gestor do IBS nem de conselho de odontologia.</p>
+    <p>Este site não é afiliado ao Facebook, ao Instagram nem ao Google.</p>
+    <p>Produto digital: nenhum item físico é enviado.</p>
+    <p><span class="falta">[[CNPJ ou nome do vendedor]]</span> · <span class="falta">[[endereço físico]]</span> · <span class="falta">[[e-mail de contato]]</span> · <a href="privacidade.html">Privacidade</a> · <a href="termos.html">Termos</a> · Contato: <span class="falta">[[e-mail de suporte]]</span></p>
+  </div>
+</footer>
+
+<!-- Barra fixa do celular -->
+<div class="fixa" id="fixa"><a href="#oferta" class="btn">Quero o Atlas do Dentista</a></div>
+
+<!-- Ampliação das páginas da vitrine: fecha no X, no fundo e no Esc. Sem biblioteca. -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Página ampliada" aria-hidden="true">
+  <div class="lb-caixa">
+    <button class="lb-x" type="button" aria-label="Fechar" data-fecha-lb="1">&times;</button>
+    <div class="lb-folha"><img id="lb-img" alt=""></div>
+    <p class="lb-cap" id="lb-cap"></p>
+  </div>
+</div>
+
+<!-- Pop-up de upsell (padrão VESPRO) · COPY V5 HUMANIZADA. Preço do pop-up R$ 23,90 por decisão do usuário (no card o completo é R$ 27,90). -->
+<div class="overlay" id="popup" role="dialog" aria-modal="true" aria-labelledby="pop-t" aria-hidden="true">
+  <div class="pop">
+    <button class="fechar" type="button" aria-label="Fechar" data-fecha="1">&times;</button>
+    <p class="sobretitulo">Antes de continuar...</p>
+    <p class="apoio" style="margin-bottom:6px">Você escolheu o Caderno do Dentista, de R$ 17,90.</p>
+    <h3 id="pop-t">Por mais R$ 6, leve o <span class="c-azul">Atlas Completo do Dentista</span> com os 6 bônus:</h3>
+    <!-- Miniatura dos 6 bônus: #1 a #3 com as fotos de assets/img/ (recortadas na capa), #4 a #6 com páginas reais -->
+    <div class="pop-capas" aria-hidden="true"><div class="folha" style="--r:-9deg"><img src="assets/img/bonus-1.webp" width="800" height="600" alt="" decoding="async" loading="lazy" style="object-position:29% 50%"></div><div class="folha" style="--r:-5deg"><img src="assets/img/bonus-2.webp" width="800" height="600" alt="" decoding="async" loading="lazy" style="object-position:15% 50%"></div><div class="folha" style="--r:-2deg"><img src="assets/img/bonus-3.webp" width="800" height="600" alt="" decoding="async" loading="lazy" style="object-position:9% 50%"></div><div class="folha" style="--r:2deg"><img src="assets/produto/p-clinica-capa.webp" width="260" height="368" alt="" decoding="async" loading="lazy"></div><div class="folha planilha" style="--r:5deg"><img src="assets/produto/g-calculadora.webp" width="688" height="645" alt="" decoding="async" loading="lazy"></div><div class="folha" style="--r:9deg"><img src="assets/produto/p-planner-capa.webp" width="260" height="368" alt="" decoding="async" loading="lazy"></div></div>
+    <ul class="checks">
+      <li>Guia PF ou PJ?</li>
+      <li>Calendário fiscal do dentista</li>
+      <li>Receita Saúde sem complicação</li>
+      <li>Caderno da Clínica</li>
+      <li>Calculadora do crédito</li>
+      <li>Planner da transição</li>
+    </ul>
+    <div class="caixa-preco">Na página ele sai por <s>R$ 27,90</s><b>Aqui, R$ 23,90</b></div>
+    <a href="https://pay.wiapy.com/G-oeBKAArAM" class="btn" data-checkout="upsell" data-value="23.90" data-name="Atlas Completo do Dentista (pop-up)">SIM, QUERO O COMPLETO</a>
+    <a href="https://pay.wiapy.com/f9hwjY-Xt1xz" class="link-discreto" data-checkout="basico" data-value="17.90" data-name="Caderno do Dentista">não, quero só o Caderno do Dentista</a>
+  </div>
+</div>
+<script>
+/* Configuração única. Checkouts da Wiapy e pixel da Meta preenchidos em 24/11/2026. Clarity ainda vazio (não carrega). */
+window.CONFIG = {
+  pixel: "1811554953382717", clarity: "", moeda: "BRL",
+  checkout: {
+    basico:   "https://pay.wiapy.com/f9hwjY-Xt1xz",  /* Caderno do Dentista, R$ 17,90 (card de entrada, via pop-up, e "não, quero só o Caderno") */
+    completo: "https://pay.wiapy.com/r-BNr9dQ9GE4",  /* Atlas Completo do Dentista, R$ 27,90 (card Completo) */
+    upsell:   "https://pay.wiapy.com/G-oeBKAArAM"    /* Atlas Completo no pop-up, R$ 23,90 ("SIM, QUERO O COMPLETO") */
+  },
+  precos:   { basico: 17.90, completo: 27.90, upsell: 23.90 }
+};
+
+/* Roda cada bloco isolado: se um falhar, o resto da página continua */
+function safe(fn){ try{ fn(); }catch(e){ if(window.console){ console.warn(e); } } }
+document.documentElement.className += " js";
+var C = window.CONFIG;
+
+/* Pixel da Meta (só carrega se houver ID) */
+safe(function(){
+  if(!C.pixel){ return; }
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', C.pixel);
+  fbq('track', 'PageView');
+  fbq('track', 'ViewContent', { value: C.precos.completo, currency: C.moeda, content_name: 'Atlas da Reforma do Dentista' });
+});
+
+/* Clarity (só carrega se houver ID) */
+safe(function(){
+  if(!C.clarity){ return; }
+  (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script",C.clarity);
+});
+
+function evFb(a,b,c){ safe(function(){ if(window.fbq){ fbq(a,b,c); } }); }
+function evCl(nome){ safe(function(){ if(window.clarity){ clarity('event', nome); } }); }
+
+/* UTMs: guarda por 7 dias e repassa para o checkout */
+var UTM = "";
+safe(function(){
+  var chaves = ["utm_source","utm_medium","utm_campaign","utm_content","utm_term","fbclid","src","sck","gclid","ttclid"];
+  var q = window.location.search.replace(/^\?/, "").split("&"), achou = [], i, par;
+  for(i = 0; i < q.length; i++){
+    par = q[i].split("=");
+    if(par[0] && chaves.indexOf(par[0]) > -1 && par[1]){ achou.push(par[0] + "=" + par[1]); }
+  }
+  try{
+    if(achou.length){
+      UTM = achou.join("&");
+      localStorage.setItem("atlas_utm", JSON.stringify({ v: UTM, t: new Date().getTime() }));
+    }else{
+      var g = JSON.parse(localStorage.getItem("atlas_utm") || "null");
+      if(g && (new Date().getTime() - g.t) < 7*24*60*60*1000){ UTM = g.v; }
+    }
+  }catch(e){ UTM = achou.join("&"); }
+});
+
+/* Aplica os links do CONFIG nos botões de checkout */
+function linkDe(chave){
+  var url = C.checkout[chave];
+  if(!url){ return "#"; }
+  return UTM ? url + (url.indexOf("?") > -1 ? "&" : "?") + UTM : url;
+}
+safe(function(){
+  var bt = document.querySelectorAll("[data-checkout]"), i;
+  for(i = 0; i < bt.length; i++){
+    if(!bt[i].getAttribute("data-abre-popup")){ bt[i].setAttribute("href", linkDe(bt[i].getAttribute("data-checkout"))); }
+  }
+});
+
+/* Pop-up de upsell */
+var pop = document.getElementById("popup"), ultimoFoco = null;
+function abrePop(){
+  pop.className = "overlay on"; pop.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+  safe(function(){ pop.querySelector(".fechar").focus(); });
+  evCl("popup_oferta");
+}
+function fechaPop(){
+  pop.className = "overlay"; pop.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+  if(ultimoFoco){ safe(function(){ ultimoFoco.focus(); }); }
+}
+safe(function(){
+  document.addEventListener("click", function(e){
+    var el = e.target;
+    while(el && el !== document){
+      if(el.getAttribute && el.getAttribute("data-abre-popup")){
+        e.preventDefault(); ultimoFoco = el; abrePop(); return;
+      }
+      if(el.getAttribute && el.getAttribute("data-checkout")){
+        evFb("track", "InitiateCheckout", { value: parseFloat(el.getAttribute("data-value")), currency: C.moeda, content_name: el.getAttribute("data-name") });
+        evCl("checkout_" + el.getAttribute("data-checkout"));
+        if(el.getAttribute("href") === "#"){ e.preventDefault(); } /* sem link real ainda */
+        return;
+      }
+      if(el.getAttribute && el.getAttribute("data-fecha")){ fechaPop(); return; }
+      el = el.parentNode;
+    }
+  });
+  pop.addEventListener("click", function(e){ if(e.target === pop){ fechaPop(); } });
+  document.addEventListener("keydown", function(e){
+    if(pop.className.indexOf("on") < 0){ return; }
+    if(e.key === "Escape" || e.keyCode === 27){ fechaPop(); return; }
+    if(e.key === "Tab" || e.keyCode === 9){
+      var f = pop.querySelectorAll("button, a[href]"), pri = f[0], ult = f[f.length - 1];
+      if(e.shiftKey && document.activeElement === pri){ e.preventDefault(); ult.focus(); }
+      else if(!e.shiftKey && document.activeElement === ult){ e.preventDefault(); pri.focus(); }
+    }
+  });
+});
+
+/* FAQ: uma aberta por vez */
+safe(function(){
+  var qs = document.querySelectorAll(".faq-q"), i;
+  /* Sem JS tudo fica aberto; com JS, só a primeira resposta começa aberta */
+  for(i = 1; i < qs.length; i++){
+    qs[i].setAttribute("aria-expanded", "false");
+    document.getElementById(qs[i].getAttribute("aria-controls")).hidden = true;
+  }
+  for(i = 0; i < qs.length; i++){
+    qs[i].addEventListener("click", function(){
+      var aberta = this.getAttribute("aria-expanded") === "true", j;
+      for(j = 0; j < qs.length; j++){
+        qs[j].setAttribute("aria-expanded", "false");
+        document.getElementById(qs[j].getAttribute("aria-controls")).hidden = true;
+      }
+      if(!aberta){
+        this.setAttribute("aria-expanded", "true");
+        document.getElementById(this.getAttribute("aria-controls")).hidden = false;
+      }
+    });
+  }
+});
+
+/* Chegada à oferta (uma vez) + barra fixa do celular */
+safe(function(){
+  var oferta = document.getElementById("oferta"), final = document.getElementById("final");
+  var hero = document.getElementById("cta-hero"), fixa = document.getElementById("fixa");
+  var viu = false;
+  function chegou(){
+    if(viu){ return; } viu = true;
+    evFb("trackCustom", "ViewOffer", { value: C.precos.completo, currency: C.moeda });
+    evCl("chegou_oferta");
+  }
+  function naTela(el){ var r = el.getBoundingClientRect(); return r.top < window.innerHeight && r.bottom > 0; }
+  /* Aparece depois que o botão do hero sai da tela e some quando a oferta ou o CTA final estão na tela */
+  function barra(){
+    var passouHero = hero.getBoundingClientRect().bottom < 0;
+    var mostra = passouHero && !naTela(oferta) && !naTela(final);
+    fixa.className = mostra ? "fixa on" : "fixa";
+  }
+  if("IntersectionObserver" in window){
+    new IntersectionObserver(function(en){
+      if(en[0].isIntersecting && (en[0].intersectionRatio >= 0.3 || en[0].intersectionRect.height > window.innerHeight * 0.3)){ chegou(); }
+    }, { threshold: [0, 0.3] }).observe(oferta);
+  }else{
+    window.addEventListener("scroll", function(){
+      if(oferta.getBoundingClientRect().top < window.innerHeight * 0.7){ chegou(); }
+    });
+  }
+  window.addEventListener("scroll", barra);
+  window.addEventListener("resize", barra);
+  barra();
+});
+
+/* Botões de CTA (hero, seções, barra fixa, CTA final): rolagem suave até os cards de plano.
+   Para com a faixa da data logo abaixo da barra do topo e os cards em seguida.
+   Sem JS, o href="#oferta" continua levando para o mesmo lugar. Nenhum desses botões vai ao checkout. */
+safe(function(){
+  var alvo = document.querySelector("#oferta .faixa-urg") || document.getElementById("oferta");
+  var topo = document.querySelector(".barra");
+  var links = document.querySelectorAll('a[href="#oferta"]'), i;
+  var suave = "scrollBehavior" in document.documentElement.style;
+  function rola(){
+    var folga = (topo ? topo.getBoundingClientRect().height : 0) + 8;
+    var ini = window.pageYOffset || document.documentElement.scrollTop || 0;
+    var fim = Math.max(0, ini + alvo.getBoundingClientRect().top - folga);
+    if(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches){ window.scrollTo(0, fim); return; }
+    if(suave){ window.scrollTo({ top: fim, behavior: "smooth" }); return; }
+    /* iPhone antigo, sem scroll-behavior: animação simples de 450 ms */
+    var t0 = null, dist = fim - ini;
+    function passo(t){
+      if(t0 === null){ t0 = t; }
+      var p = Math.min(1, (t - t0) / 450);
+      window.scrollTo(0, ini + dist * (p < .5 ? 2 * p * p : 1 - Math.pow(-2 * p + 2, 2) / 2));
+      if(p < 1){ window.requestAnimationFrame(passo); }
+    }
+    if(window.requestAnimationFrame){ window.requestAnimationFrame(passo); } else { window.scrollTo(0, fim); }
+  }
+  for(i = 0; i < links.length; i++){
+    links[i].addEventListener("click", function(e){
+      if(e.preventDefault){ e.preventDefault(); }
+      rola();
+    });
+  }
+});
+/* Entrada suave ao rolar: só elementos abaixo da primeira tela, só com IntersectionObserver
+   e só se a pessoa não pediu menos movimento. Sem JS, tudo aparece normal. */
+safe(function(){
+  if(!("IntersectionObserver" in window)){ return; }
+  if(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches){ return; }
+  var els = document.querySelectorAll(".secao h2, .card-ico, .card-ideal, .bonus, .plano, .passo, .caixa-escura, .reforco, .garantia, .recebe-card");
+  function limpa(el){
+    setTimeout(function(){
+      el.className = (" " + el.className + " ").replace(" rv ", " ").replace(" in ", " ").replace(/^\s+|\s+$/g, "");
+      el.style.transitionDelay = "";
+    }, 1000);
+  }
+  var io = new IntersectionObserver(function(en){
+    for(var k = 0; k < en.length; k++){
+      if(en[k].isIntersecting){
+        var el = en[k].target;
+        io.unobserve(el);
+        el.className += " in";
+        limpa(el);
+      }
+    }
+  }, { rootMargin: "0px 0px -6% 0px", threshold: 0.06 });
+  var i, el, pai, idx;
+  for(i = 0; i < els.length; i++){
+    el = els[i];
+    if(el.getBoundingClientRect().top < window.innerHeight){ continue; }
+    /* pequeno atraso em cascata entre irmãos (cards lado a lado) */
+    pai = el.parentNode; idx = 0;
+    if(pai && pai.children){ for(var j = 0; j < pai.children.length; j++){ if(pai.children[j] === el){ idx = j; break; } } }
+    el.style.transitionDelay = ((idx % 4) * 80) + "ms";
+    el.className += " rv";
+    io.observe(el);
+  }
+});
+/* 2. VEJA COMO FICA: carrossel das 12 páginas.
+   Desliza sozinho em loop (cópia da lista no fim, com aria-hidden); pausa com o mouse em cima, ao tocar,
+   com o foco do teclado dentro, com a ampliação aberta e fora da tela. Arrasta com o dedo (rolagem nativa)
+   e com o mouse. Um clique sem arrastar abre a ampliação. Com "menos movimento": parado e com setas. */
+safe(function(){
+  var vit = document.querySelector(".vitrine-caixa .vitrine"); if(!vit){ return; }
+  var caixa = vit.parentNode, lb = document.getElementById("lb");
+  var calmo = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+  var n = vit.children.length, i, j;
+  var pede = window.requestAnimationFrame || function(f){ return setTimeout(f, 16); };
+  var VEL = 30; /* pixels por segundo */
+  var pos = 0, escrito = 0, sobre = false, toque = false, foco = false, visivel = true, pausaAte = 0, ultToque = 0, ultQuadro = 0;
+  var arr = { on: false, x: 0, ini: 0, moveu: false };
+  function agora(){ return new Date().getTime(); }
+  caixa.className += " vit-js" + (calmo ? " vit-manual" : "");
+
+  /* cópias para o loop: invisíveis para leitor de tela e fora do Tab */
+  if(!calmo){
+    for(i = 0; i < n; i++){
+      var c = vit.children[i].cloneNode(true);
+      c.setAttribute("aria-hidden", "true");
+      var b = c.getElementsByTagName("button");
+      for(j = 0; j < b.length; j++){ b[j].setAttribute("tabindex", "-1"); }
+      var im = c.getElementsByTagName("img");
+      for(j = 0; j < im.length; j++){ im[j].setAttribute("alt", ""); }
+      vit.appendChild(c);
+    }
+  }
+  function meia(){ return calmo ? 0 : (vit.children[n].offsetLeft - vit.children[0].offsetLeft); }
+  function poe(v){
+    var m = meia();
+    if(m > 0){ while(v >= m){ v -= m; } while(v < 0){ v += m; } }
+    else { var max = vit.scrollWidth - vit.clientWidth; if(v < 0){ v = 0; } if(v > max){ v = max; } }
+    pos = v; vit.scrollLeft = v; escrito = vit.scrollLeft;
+  }
+  function carregaTodas(){
+    var im = vit.getElementsByTagName("img");
+    for(var k = 0; k < im.length; k++){ if(im[k].getAttribute("loading") === "lazy"){ im[k].setAttribute("loading", "eager"); } }
+  }
+
+  /* rolagem feita pela pessoa (dedo, trackpad, seta): segue de onde ela parou */
+  vit.addEventListener("scroll", function(){
+    var s = vit.scrollLeft;
+    if(Math.abs(s - escrito) > 1.5){
+      pausaAte = agora() + 2500;
+      var m = meia();
+      if(m > 0 && s >= m && !toque){ poe(s - m); } else { pos = s; escrito = s; }
+    }
+  });
+  vit.addEventListener("mouseenter", function(){ if(agora() - ultToque > 800){ sobre = true; } });
+  vit.addEventListener("mouseleave", function(){ sobre = false; foco = false; });
+  vit.addEventListener("touchstart", function(){ toque = true; ultToque = agora(); }, false);
+  function soltou(){ toque = false; foco = false; ultToque = agora(); pausaAte = agora() + 2500; }
+  vit.addEventListener("touchend", soltou, false);
+  vit.addEventListener("touchcancel", soltou, false);
+  /* foco pausa só quando vem do teclado (Tab); o foco que volta depois de fechar a ampliação com mouse ou dedo não trava */
+  var ultPonteiro = 0;
+  function marcaPonteiro(){ ultPonteiro = agora(); }
+  document.addEventListener("mousedown", marcaPonteiro, true);
+  document.addEventListener("touchstart", marcaPonteiro, true);
+  vit.addEventListener("focusin", function(){ foco = agora() - ultPonteiro > 1500; });
+  vit.addEventListener("focusout", function(){ foco = false; });
+
+  /* arrastar com o mouse (o dedo usa a rolagem nativa) */
+  vit.addEventListener("dragstart", function(e){ e.preventDefault(); });
+  vit.addEventListener("mousedown", function(e){
+    if(e.button !== 0){ return; }
+    arr.on = true; arr.x = e.clientX; arr.ini = vit.scrollLeft; arr.moveu = false;
+    e.preventDefault();
+  });
+  document.addEventListener("mousemove", function(e){
+    if(!arr.on){ return; }
+    var dx = e.clientX - arr.x;
+    if(!arr.moveu && Math.abs(dx) > 6){ arr.moveu = true; vit.className += " arrastando"; }
+    if(arr.moveu){ poe(arr.ini - dx); arr.x = e.clientX; arr.ini = vit.scrollLeft; pausaAte = agora() + 2500; }
+  });
+  document.addEventListener("mouseup", function(){
+    if(!arr.on){ return; }
+    arr.on = false;
+    vit.className = vit.className.replace(/\s*arrastando/g, "");
+    setTimeout(function(){ arr.moveu = false; }, 0);
+  });
+  /* se arrastou, o clique que vem junto não abre a ampliação */
+  vit.addEventListener("click", function(e){ if(arr.moveu){ e.preventDefault(); e.stopPropagation(); } }, true);
+
+  /* setas (só no modo "menos movimento") */
+  var setas = caixa.querySelectorAll(".vit-seta");
+  for(i = 0; i < setas.length; i++){
+    setas[i].addEventListener("click", function(){
+      var d = parseInt(this.getAttribute("data-dir"), 10) || 1;
+      var passo = vit.children.length > 1 ? (vit.children[1].offsetLeft - vit.children[0].offsetLeft) : vit.clientWidth;
+      var qt = Math.max(1, Math.floor(vit.clientWidth / passo));
+      poe(vit.scrollLeft + d * qt * passo);
+    });
+  }
+
+  /* só anda (e só baixa as 12 páginas) quando a seção está perto da tela */
+  if("IntersectionObserver" in window){
+    visivel = false;
+    new IntersectionObserver(function(en){
+      visivel = en[0].isIntersecting;
+      if(visivel){ carregaTodas(); }
+    }, { rootMargin: "300px 0px" }).observe(vit);
+  } else { carregaTodas(); }
+
+  if(calmo){ return; }
+  function quadro(){
+    var t = agora(), dt = ultQuadro ? Math.min(t - ultQuadro, 50) : 0;
+    ultQuadro = t;
+    var lbAberto = lb && lb.className.indexOf("on") > -1;
+    if(visivel && !sobre && !toque && !foco && !arr.on && !lbAberto && t > pausaAte){ poe(pos + VEL * dt / 1000); }
+    pede(quadro);
+  }
+  pede(quadro);
+});
+/* Vitrine: tocar numa página amplia (fecha no X, no fundo e no Esc) */
+safe(function(){
+  var lb = document.getElementById("lb"); if(!lb){ return; }
+  var img = document.getElementById("lb-img"), cap = document.getElementById("lb-cap"), x = lb.querySelector(".lb-x"), ultimo = null;
+  function abre(bt){
+    var i = bt.getElementsByTagName("img")[0];
+    img.setAttribute("src", i.getAttribute("src"));
+    img.setAttribute("alt", i.getAttribute("alt"));
+    cap.textContent = bt.getAttribute("data-legenda") || "";
+    ultimo = bt;
+    lb.className = "lb on"; lb.setAttribute("aria-hidden", "false");
+    document.documentElement.style.overflow = "hidden";
+    x.focus();
+    evCl("ampliou_pagina");
+  }
+  function fecha(){
+    lb.className = "lb"; lb.setAttribute("aria-hidden", "true");
+    document.documentElement.style.overflow = "";
+    if(ultimo){ ultimo.focus(); }
+  }
+  /* um clique em qualquer página (inclusive nas cópias do carrossel) abre a ampliação */
+  var vits = document.querySelectorAll(".vitrine"), k;
+  for(k = 0; k < vits.length; k++){
+    vits[k].addEventListener("click", function(e){
+      var t = e.target;
+      while(t && t !== this){
+        if(typeof t.className === "string" && (" " + t.className + " ").indexOf(" amplia ") > -1){ abre(t); return; }
+        t = t.parentNode;
+      }
+    });
+  }
+  lb.addEventListener("click", function(e){
+    var t = e.target;
+    if(t === lb || (t.getAttribute && t.getAttribute("data-fecha-lb"))){ fecha(); }
+  });
+  document.addEventListener("keydown", function(e){
+    if((e.key === "Escape" || e.keyCode === 27) && lb.className.indexOf("on") > -1){ fecha(); }
+    if((e.key === "Tab" || e.keyCode === 9) && lb.className.indexOf("on") > -1){ e.preventDefault(); x.focus(); }
+  });
+});
+</script>
+</body>
+</html>

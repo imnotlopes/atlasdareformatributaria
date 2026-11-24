@@ -1,0 +1,6 @@
+# Fora do repositório: backups, notas internas e testes
+index.backup-*.html
+CONTEXTO.md
+_qa/
+*.tmp.py
+*.tmp.html

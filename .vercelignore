@@ -1,0 +1,6 @@
+# Fora da publicação: backups, notas internas e arquivos de teste
+index.backup-*.html
+CONTEXTO.md
+_qa/
+*.tmp.py
+*.tmp.html
